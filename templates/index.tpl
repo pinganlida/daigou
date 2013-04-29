@@ -8,5 +8,13 @@ helloword
 <hr>
 {$Name}
 <hr>
+
+{section name=outer loop=$list}
+	{$list[outer]}<br>
+{sectionelse}
+	none
+{/section}
+
+<hr>
 footer
 {include file="footer.tpl"}

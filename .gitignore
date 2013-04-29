@@ -2,6 +2,9 @@
 ## Eclipse
 #################
 
+cache
+templates_c
+
 *.pydevproject
 .project
 .metadata

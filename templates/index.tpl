@@ -5,7 +5,8 @@
 <hr>
 Ê×Ò³<br>
 helloword
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+{$Name}
 <hr>
 footer
 {include file="footer.tpl"}

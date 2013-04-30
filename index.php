@@ -1,7 +1,9 @@
 <?php
 require('./libs/Smarty.class.php');
+require('./include/mysql.php');
 
 $smarty = new Smarty;
+$db = new mysqlconnect();
 
 include_once './include/include.php';
 // //$smarty->force_compile = true;
@@ -15,10 +17,18 @@ for($i=0;$i<20;$i++){
 	$list[$i] =  "hahahaha-".$i;
 }
 
-$smarty->assign("list",$list);
 
 $smarty->assign("header2",$smarty->fetch("header2.tpl"));
 
 
+$sql = "select * from product";
+$arr = $db->query_array($sql);
+
+
+$smarty->assign("productlist", $arr);
+
+
+
 $smarty->display('index.tpl');
+$db->disconnect();
 ?>

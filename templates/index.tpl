@@ -11,19 +11,16 @@ helloword
 <hr>
 {$Name}
 <hr>
-<table border=1>
-{section name=outer loop=$list}
+<table border=1>	
+{section name=outer loop=$productlist}
 	<tr>
 		<td>
-		{$list[outer]}<br>
+	{$productlist[outer].name}
 		</td>
 		<td>
-			rambo
+		{$productlist[outer].description}
 		</td>
 	</tr>
-	
-{sectionelse}
-	none
 {/section}
 </table>
 

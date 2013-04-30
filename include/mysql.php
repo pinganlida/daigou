@@ -64,5 +64,19 @@ class mysqlconnect{
 		
 		return $row[0];
 	}
+	
+	//general query
+	function query($sql){
+		if($this->showsql)
+			echo $sql;
+		$result=mysql_query($sql);
+		if(!$result)
+			die ("database general query error!");
+		
+		if($result)
+			return true;
+		else
+			return false;
+	}
 }
 ?>

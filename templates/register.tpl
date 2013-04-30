@@ -6,6 +6,7 @@
 <hr>
 {$Name}
 <a href="./index.php">返回首页</a>
+<a href="./login.php">登陆</a>
 <hr>
 <form name="RegForm" action="register.php" method="post">
 输入用户名: <input id="username"  name="username" type="text" />

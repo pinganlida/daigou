@@ -15,6 +15,7 @@ if($_GET['action'] == "logout")
 	unset($_SESSION['id']);
 	unset($_SESSION['username']);
 	echo '注销登录成功！点击此处 <a href="login.html">登录</a>';
+	exit;
 }
 
 if($_POST['submit'])

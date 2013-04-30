@@ -24,6 +24,12 @@ $smarty->assign("header2",$smarty->fetch("header2.tpl"));
 $sql = "select * from product";
 $arr = $db->query_array($sql);
 
+//example of insert
+// $sql = "insert into product (name,description) values ('添加商品测试','添加商品描述测试')";
+// $newid = $db->query_insert($sql);
+//echo "newid = ".$newid;
+
+echo $db->rownumber("product");
 
 $smarty->assign("productlist", $arr);
 

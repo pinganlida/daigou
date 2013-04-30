@@ -5,6 +5,7 @@ class mysqlconnect{
 	private $username = "root";
 	private $password = "guitar";
 	private $port = "3306";
+	private $showsql = false;
 	
 	function mysqlconnect(){
 		if($this->link==null)
@@ -20,7 +21,10 @@ class mysqlconnect{
 		mysql_close($this->link);
 	}
 	
+	//query mysql, obtain an array of result
 	function query_array($sql){
+		if($this->showsql)
+			echo $sql;
 		$result=mysql_query($sql);
 		if(!$result)	
 			die ("database query error!");
@@ -35,6 +39,30 @@ class mysqlconnect{
 	}
 	
 	
+	//query mysql, obtain an array of result
+	function query_insert($sql){
+		if($this->showsql)
+			echo $sql;
+		$result=mysql_query($sql);
+		if(!$result)
+			die ("database insert error!");
 	
+		return mysql_insert_id();
+	
+	}
+	
+	//get row number of a table
+	function rownumber($table){
+		$sql = "select count(id) FROM ".$table;
+		if($this->showsql)
+			echo $sql;
+		$result=mysql_query($sql);
+		if(!$result)
+			die ("database insert error!");
+		
+		$row = mysql_fetch_array($result);
+		
+		return $row[0];
+	}
 }
 ?>

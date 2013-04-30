@@ -14,7 +14,7 @@ include_once './include/include.php';
 $smarty->assign("Name","wake me up",true);
 
 for($i=0;$i<20;$i++){
-	$list[$i] =  "hahahaha-".$i;
+	$list[$i] =  "hahahahahoho-".$i;
 }
 
 

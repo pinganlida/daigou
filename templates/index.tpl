@@ -6,6 +6,7 @@
 <hr>
 Ê×Ò³
 <a href="./register.php">×¢²á</a>
+<a href="./login.php">µÇÂ½</a>
 <br>
 helloword
 <hr>

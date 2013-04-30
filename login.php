@@ -10,16 +10,16 @@ session_start();
 //注销登录
 if($_GET['action'] == "logout")
 {
-	unset($_SESSION['userid']);
+	unset($_SESSION['id']);
 	unset($_SESSION['username']);
 	echo '注销登录成功！点击此处 <a href="login.html">登录</a>';
 	exit;
 }
 
-if(!isset($_POST['submit']))
+if($_POST['submit'])
 {
-	exit('非法访问!');
-}
+	
+
 
 
 $username = $_POST['username'];
@@ -33,20 +33,20 @@ $password = MD5($_POST['password']);
 //include('conn.php');
 
 //检测用户名及密码是否正确
-$check_query = mysql_query("select uid from user where username='$username' and password='$password' limit 1");
+$check_query = mysql_query("select id from users where username='$username' and password='$password'");
 if($result = mysql_fetch_array($check_query))
 {
 	//登录成功
 	$_SESSION['username'] = $username;
-	$_SESSION['userid'] = $result['uid'];
+	$_SESSION['id'] = $result['id'];
 	echo $username,' 欢迎你！进入 <a href="my.php">用户中心</a><br />';
 	echo '点击此处 <a href="login.php?action=logout">注销</a> 登录！<br />';
 	exit;
 } 
 else 
 {
-	exit('登录失败！点击此处 <a href="./index.php;">返回</a> 重试');
+	exit('登录失败！点击此处 <a href="login.php">返回主页</a> 重试');
 }
-
+}
 $smarty->display('login.tpl');
 ?>

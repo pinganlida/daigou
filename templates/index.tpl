@@ -4,7 +4,9 @@
 {$header2}
 代购平台 header
 <hr>
-首页<br>
+首页
+<a href="./register.php">注册</a>
+<br>
 helloword
 <hr>
 {$Name}

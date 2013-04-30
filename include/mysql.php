@@ -58,7 +58,7 @@ class mysqlconnect{
 			echo $sql;
 		$result=mysql_query($sql);
 		if(!$result)
-			die ("database insert error!");
+			die ("database count error!");
 		
 		$row = mysql_fetch_array($result);
 		

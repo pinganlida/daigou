@@ -7,7 +7,9 @@ include_once './include/include.php';
 
 $smarty->assign("Name","注册",true);
 
-if(isset($_POST['submit']))
+$error="";
+
+if($_POST['submit'])
 { 
 	//提交后的页面
 	$username = $_POST['username'];
@@ -35,10 +37,13 @@ if(isset($_POST['submit']))
 	{
 		$error .= '密码长度不能小于6位<br>';
 	}
-	if($_POST['password']!=$_POST['re_password'])
+	if($_POST['password']!=$_POST['repass'])
 	{
 		$error .= '2次密码不一样<br>';
 	}
+	
+
+	
 /*	if(!preg_match('/^[\w\x80-\xff]{3,15}$/', $username))
 	{
 		$error .= '用户名不匹配<br>';
@@ -47,11 +52,24 @@ if(isset($_POST['submit']))
 	{
 		$error .= '邮箱不匹配<br>';
 	} */
+
+	
+	if(!empty($error))
+	{		
+		$smarty->assign("Error",$error,true);
+		unset($error);
+	}
+	$smarty->assign("input",$_POST);
+	
 }	
 //未提交的页面， 显示输入用户名，密码，电子邮件
 else
 {
-	
+	if(strlen($error)==0)
+	{
+		$smarty->assign("Error","",true);
+		unset($error);
+	}
 }
 	/*if(success)
 	{
@@ -68,11 +86,7 @@ else
 //$smarty->assign("header2",$smarty->fetch("header2.tpl"));
 
 
-if(isset($error))
-{
-	$smarty->assign("Error",$error,true);
-	unset($error);
-}
+
 $smarty->display('register.tpl');
 
 ?>

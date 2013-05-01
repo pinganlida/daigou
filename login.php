@@ -12,13 +12,6 @@ require('./include/juglogin.php');
 session_start();
 
 //注销登录
-if($_GET['action'] == "logout")
-{
-	unset($_SESSION['id']);
-	unset($_SESSION['username']);
-	$smarty->assign("message","注销用户成功");
-}
-
 if($_POST['submit'])
 {
 
@@ -37,8 +30,6 @@ if($_POST['submit'])
 		//登录成功
 		$_SESSION['username'] = $username;
 		$_SESSION['id'] = $arr[id];
-		$smarty->assign("username",$username,true);
-		$smarty->assign("loginmessage","my.php",true);
 		$smarty->assign("logoutmessage","login.php?action=logout",true);
 		header("Location: index.php");
 	}

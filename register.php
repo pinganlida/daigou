@@ -1,10 +1,10 @@
 <?php
 require('./libs/Smarty.class.php');
-
+require('./include/mysql.php');
 $smarty = new Smarty;
-
+$db = new mysqlconnect();
 include_once './include/include.php';
-
+require('./include/juglogin.php');
 $smarty->assign("Name","注册",true);
 
 $error="";
@@ -59,8 +59,26 @@ if($_POST['submit'])
 		$smarty->assign("Error",$error,true);
 		unset($error);
 	}
-	$smarty->assign("input",$_POST);
-	
+	else
+	{
+		$sql_query= "select * from users where username='$username';";
+		$arr = $db->query_array($sql_query);
+		if(count($arr)>0)
+		{
+			$smarty->assign("Error","用户名存在",true);
+		}
+		else
+		{
+			$password = MD5($password);
+			$regdate = time();
+			$sql = "INSERT INTO users(username,password,email)VALUES('$username','$password','$email')";
+			$id= $db->query_insert($sql);
+			$_SESSION['username'] = $username;
+			$_SESSION['id'] = $id;
+			$smarty->assign("message","index.php",true);
+			header("Location: index.php");
+		}
+	}	
 }	
 //未提交的页面， 显示输入用户名，密码，电子邮件
 else

@@ -16,4 +16,7 @@
 <input type="submit" name="submit" value="  提交注册  ">
 <hr>
 {$Error}
+{if count($message) gt 0}
+	<a href="{$message}">返回主页</a><br/>
+{/if}
 <hr>

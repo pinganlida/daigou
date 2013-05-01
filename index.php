@@ -2,9 +2,10 @@
 require('./libs/Smarty.class.php');
 require('./include/mysql.php');
 
+
 $smarty = new Smarty;
 $db = new mysqlconnect();
-
+require('./include/juglogin.php');
 include_once './include/include.php';
 // //$smarty->force_compile = true;
 // $smarty->debugging = true;
@@ -18,7 +19,7 @@ for($i=0;$i<20;$i++){
 }
 
 
-$smarty->assign("header2",$smarty->fetch("header2.tpl"));
+//$smarty->assign("header2",$smarty->fetch("header2.tpl"));
 
 
 $sql = "select * from product";

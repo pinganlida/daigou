@@ -20,27 +20,24 @@ if(isset($_POST['selectpage']))
 { 
 	if($_POST['selectpage']>$pages)
 		$page  = $pages;
+	elseif ($_POST['selectpage']<=0)
+		$page = 1;
 	else
-	$page = intval($_POST['selectpage']);
+		$page = intval($_POST['selectpage']);
 }
-else if(isset($_GET['page']))
+elseif(isset($_GET['page'])||$_GET['page'] >0)
 	$page=intval($_GET['page']);
-else{
+else
+{
 	$page = 1; //没有页数则显示第一页；
 }
 //计算记录偏移量
 $offset = ($page-1)*$pagesize;
 
-
-
-
 $sql = "select * from product limit $offset,$pagesize";
 $arr = $db->query_array($sql);
 
-
 $smarty->assign("productlist", $arr);
-
-
 
 $frist = 1;
 $prev =$page-1;
@@ -48,7 +45,6 @@ $next = $page+1;
 $last=$pages;
 if($page>1)
 {
-	
 	$fristpage = "<a href='product.php?page=".$frist."'>首页</a>";
 	$prevpage =  "<a href='product.php?page=".$prev."'>上一页</a>";
 	
@@ -65,21 +61,6 @@ if($page<$pages)
 }
 $totalpage = "共有" .$pages. "页(" .$page. "/" .$pages.")";
 $smarty->assign("TotalPage", $totalpage);
-/*if ($pages > 1)
-{
-	for($i=1;$i<=$pages;$i++) 
-	{
-		if($i==$page) 
-		{
-			$smarty->assign("Currentpage"," [$i] ");
-		} 
-		else 
-		{
-			$notcurrentpage .= "<a href='product.php?page= ".$i."'> $i </a>";
-			$smarty->assign("NotCurrentpage",$notcurrentpage);
-		}
-	}
-}*/
 for($i=1; $i<$page; $i++)
 {	
 	$currentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";

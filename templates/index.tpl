@@ -7,6 +7,7 @@
 首页
 <a href="./register.php">注册</a>
 <a href="./login.php">登陆</a>
+<a href="./product.php">产品列表</a>
 <br>
 helloword
 <hr>

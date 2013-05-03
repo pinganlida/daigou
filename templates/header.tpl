@@ -14,10 +14,9 @@ banner
 <table width="100%">
 	<tr>
 		<td><a href="./index.php">首页</a></td>
-		<td><a href="./product.php">产品信息</a></td>
-		<td><a href="./goodofhelper.php">代购员信息</a></td>
 		<td><a href="./populargoods.php">热门商品</a></td>
 		<td><a href="./product.php">商品列表</a></td>
+		<td><a href="./goodofhelper.php">代购员信息</a></td>
 		<td><a href="./faq.php">常见问题</a></td>
 		<td><a href="./aboutus.php">关于我们</a></td>
 		<td align="right">

@@ -1,34 +1,36 @@
-{config_load file="test.conf" section="setup"}
 {include file="header.tpl" title=foo}
-
-{$header2}
-代购平台 header
-<hr>
-首页
-<a href="./register.php">注册</a>
-<a href="./login.php">登陆</a>
-<a href="./product.php">产品列表</a>
-<br>
-helloword
-<hr>
-{$Name}
-<hr>
-<table border=1>	
-{section name=outer loop=$productlist}
+<div style="width:1000px; height: 650px; border-width:1px; border-style:solid; text-align: center">
+<table width="100%">
 	<tr>
 		<td>
-	{$productlist[outer].name}
-		</td>
-		<td>
-		{$productlist[outer].description}
+		热门商品	
+		<hr>	
 		</td>
 	</tr>
-{/section}
+	<tr>
+		<td>
+		<img width="200" src ="./image/aptamilgold.jpg">	
+		<img width="200" src ="./image/karicare.jpg">	
+		<img width="200" src ="./image/ugg.jpg">
+		<img width="200" src ="./image/jurliquerosehandcream.jpg">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		澳洲常见大型超市和商店
+		<hr>		
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<img width="170" src ="./image/coles.jpg">	
+		<img width="170" src ="./image/woolworths.jpg">	
+		<img width="170" src ="./image/safeway.jpg">
+		<img width="170" src ="./image/aldi.jpg">
+		<img width="170" src ="./image/mychemist.jpg">
+		</td>
+	</tr>
+	
 </table>
-
-
-
-
-<hr>
-footer
+</div>
 {include file="footer.tpl"}

@@ -2,13 +2,10 @@
 {include file="header.tpl" title=foo}
 <br>
 <table border=1>	
-{section name=outer loop=$productlist}
+{section name=outer loop=$userslist}
 	<tr>
 		<td>
-		{$productlist[outer].name}
-		</td>
-		<td>
-		{$productlist[outer].description}
+		{$userslist[outer].username}
 		</td>
 	</tr>
 {/section}

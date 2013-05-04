@@ -29,7 +29,7 @@ if($_POST['submit'])
 	{
 		//µÇÂ¼³É¹¦
 		$_SESSION['username'] = $username;
-		$_SESSION['id'] = $arr[id];
+		$_SESSION['id'] = $arr[0][id];
 		$smarty->assign("logoutmessage","login.php?action=logout",true);
 		header("Location: index.php");
 	}

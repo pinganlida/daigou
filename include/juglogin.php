@@ -11,7 +11,7 @@ if(isset($_SESSION['username']))
 {
 	$username = $_SESSION['username'];
 	$smarty->assign("username",$username,true);
-	$smarty->assign("loginmessage","my.php",true);
+	$smarty->assign("loginmessage","changeinfo.php",true);
 	$smarty->assign("logoutmessage","index.php?action=logout",true);
 	$smarty->assign("islogin",1);
 }	else{

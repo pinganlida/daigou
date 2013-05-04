@@ -11,7 +11,7 @@ include_once './include/include.php';
 $numrows = $db->rownumber(product);
 
 //设定每一页显示的记录数
-$pagesize = 1;
+$pagesize = 3;
 //计算总页数
 $pages=intval($numrows/$pagesize);
 if($numrows%$pagesize)

@@ -1,10 +1,10 @@
 {include file="header.tpl" title=foo}
-<div style="width:1000px; border-width:1px; border-style:solid; text-align: center">
+<div style="width:100%; border-width:0px; border-style:solid; text-align: center">
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">
-		<hr>
-		热门商品	
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> 热门商品 </h2>	
 		<hr>
 		<img width="135" src ="./image/aptamilgold.jpg">	
 		<img width="135" src ="./image/karicare.jpg">	
@@ -14,6 +14,7 @@
 		</td>
 		<td rowspan="3" valign="top">
 		<iframe width="300" height="170" src="http://www.youtube.com/embed/6joCkcLXg9I?autoplay=0" frameborder="0" allowfullscreen></iframe>
+		<br>
 		常见问题
 		<hr>
 		<li>我们的货源可靠吗
@@ -33,14 +34,14 @@
 		<a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=102095293&Site=auexpress&Menu=yes"><img border="0" SRC=http://wpa.qq.com/pa?p=1:102095293:6 alt="点击这里给我发消息" align="absmiddle"></a><br>
 		<a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=59871915&Site=auexpress&Menu=yes"><img border="0" SRC=http://wpa.qq.com/pa?p=1:59871915:6 alt="点击这里给我发消息" align="absmiddle"></a><br>
 		<hr>
-		公司地址:
+		公司地址:<br>
 		<img width="250" src ="./image/address.jpg">
 		</td>
 	</tr>
 	<tr>
 		<td valign="top">
 		<hr>
-		澳洲常见大型超市和商店
+		<h2> <img width="15px" src="./image/icon2.gif"> 澳洲常见超市和商店  </h2>	
 		<hr>
 		<img width="150" src ="./image/coles.jpg">	
 		<img width="150" src ="./image/woolworths.jpg">	

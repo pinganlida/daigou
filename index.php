@@ -14,7 +14,7 @@ include_once './include/include.php';
 
 
 
-
+echo "haha";
 
 $smarty->display('index.tpl');
 $db->disconnect();

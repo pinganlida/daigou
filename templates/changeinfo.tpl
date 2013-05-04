@@ -10,7 +10,7 @@
 性别:
 {if {$input.gender} == m}
 男<input type="radio" checked="checked" id="gender" name="gender" value="m" />
-女<input type="radio" id="gender" name="gender" value="m" /><br />
+女<input type="radio" id="gender" name="gender" value="f" /><br />
 {/if}
 {if {$input.gender} == f}
 男<input type="radio" id="gender" name="gender" value="m" />

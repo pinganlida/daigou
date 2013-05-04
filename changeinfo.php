@@ -38,6 +38,9 @@ if($ist == true)
 			$db->query($sql_query);
 			
 			$smarty->assign("renewsuccessful", "更新信息成功");
+			$sql_query= "select * from users where username='$username'";
+			$arr = $db->query_array($sql_query);
+			$smarty->assign("input", $arr[0]);
 		}
 	}
 	

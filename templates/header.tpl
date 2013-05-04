@@ -2,33 +2,100 @@
 <HEAD>
 <TITLE>视频代购平台</TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+
+<style type="text/css">
+<!--
+body 
+{
+font-size: 12px;
+background-color:#ffffff;
+font-family:"宋体";
+}
+
+table
+{
+table-layout:fixed;
+}
+td
+{
+font-size: 12px;
+font-family:"宋体";
+}
+
+td.navigator{
+font-size: 14px;
+text-align: center;
+font-family:"黑体";
+}
+
+a:link
+{
+text-decoration:none; color: black;
+}
+a:hover
+{
+text-decoration:none; color: black;
+}
+a:visited
+{
+text-decoration:none; color: black;
+}
+h2
+{
+color:#E47911;
+font-size: 14px;
+font-family:"宋体";
+}
+-->
+</style>
+
 </HEAD>
-<BODY bgcolor="#ffffff" align = "center">
-<div style="width:1000px; height: 120px; border-width:1px; border-style:solid">
-banner
-</div>
 
 
-<div style="width:1000px; height: 30px; border-width:1px; border-style:solid; text-align: right">
 
-<table width="100%">
+
+<body align = "center">
+<div style="width:1280px; border-width:0px; border-style:solid">
+<table width="100%"  height="58px"border="0" >
 	<tr>
-		<td><a href="./index.php">首页</a></td>
-		<td><a href="./populargoods.php">热门商品</a></td>
-		<td><a href="./product.php">商品列表</a></td>
-		<td><a href="./goodofhelper.php">代购员信息</a></td>
-		<td><a href="./faq.php">常见问题</a></td>
-		<td><a href="./aboutus.php">关于我们</a></td>
-		<td align="right">
+		<td width="410px"><img src="./image/upxpostlogo.gif"></td>
+		<td width="450px" align = "right" valign="bottom" align="left">
 		{if $islogin == 1}
-	欢迎你 {$username}  <a href="{$loginmessage}">个人中心  </a>
-	<a href="./login.php?action=logout">注销</a>
-{else}
-<a href="./register.php">注册</a>
+			欢迎你 {$username}  | <a href="{$loginmessage}">个人中心  </a>|
+			<a href="./login.php?action=logout">注销</a>
+		{else}
+			<a href="./register.php">注册</a>
+|			|
+			<a href="./login.php">登陆</a>
+		{/if}
+		| 购物车 <img src="./image/chart.gif">
+		</td>
+		<td align="right" valign="bottom">
+		
+		
+		<img src="./image/upxpostlogo.gif"></td>
+	</tr>
+</table>
+</div>
+<div style="width:1280px; height: 5px;" ></div>
+<div style="width:1280px; height: 55px; border-width:0px; border-style:solid; text-align: right">
 
-<a href="./login.php">登陆</a>
-{/if}
-&nbsp;&nbsp;&nbsp;&nbsp;
+<table width="1280px"  height="45px" background="./image/navigator2.gif" border="0" >
+	<tr>
+		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
+		<td class="navigator" width="100px"><a href="./index.php">首页</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./populargoods.php">热门商品</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./product.php">商品列表</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./goodofhelper.php">代购员信息</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./faq.php">常见问题</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./aboutus.php">关于我们</a></td>
+		<td class="navigator" align="right">
+         &nbsp;&nbsp;&nbsp;&nbsp;
 		</td>
 	</tr>
 </table>

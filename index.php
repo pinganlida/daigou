@@ -12,10 +12,6 @@ include_once './include/include.php';
 // $smarty->caching = true;
 // $smarty->cache_lifetime = 120;
 
-
-
-echo "haha";
-
 $smarty->display('index.tpl');
 $db->disconnect();
 ?>

@@ -8,7 +8,8 @@ require('./include/juglogin.php');
 $smarty->assign("Name","注册",true);
 
 $error="";
-
+$random =rand();
+$smarty->assign("random",random,true);
 if($_POST['submit'])
 { 
 	//提交后的页面
@@ -16,6 +17,7 @@ if($_POST['submit'])
 	$password = $_POST['password'];
 	$repassword = $_POST['repass'];
 	$email = $_POST['email'];
+	
 	
 	if(empty($username))
 	{
@@ -51,6 +53,11 @@ if($_POST['submit'])
 	{
 		$error .= '邮箱不匹配<br>';
 	} 
+	// 服务器端验证的代码    
+	if(empty($_SESSION['6_letters_code'] )||strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
+	{          
+	 	$error .= "验证失败<br>";    
+	}
 
 	
 	if(!empty($error))

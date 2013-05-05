@@ -25,6 +25,11 @@ if($ist == true)
 		{
 			$error .= '邮箱不能为空<br>';
 		}
+		if(filter_var($email,FILTER_VALIDATE_EMAIL) === false)
+		{
+			$error .= '邮箱不匹配<br>';
+		}
+
 		if(!empty($error))
 		{
 			$smarty->assign("error", $error);
@@ -32,8 +37,10 @@ if($ist == true)
 		}
 		else 
 		{
+			$address = addslashes($address);
+			$postcode = addslashes($postcode);
 			
-			$sql_query = "UPDATE users SET email = '$email',gender = '$gender',Address = '$address', postcode = '$postcode',country = '$country'
+			$sql_query = "UPDATE users SET email = '$email',gender = '$gender',address = '$address', postcode = '$postcode',country = '$country'
 			WHERE username = '$username';";
 			$db->query($sql_query);
 			

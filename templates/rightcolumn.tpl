@@ -32,7 +32,7 @@
 <br>
 
 <div width="100%" class="rightcolumn">
-<img width="15px" src="./image/icon2.gif"> 在线交谈<br>
+<img width="15px" src="./image/icon2.gif"> 在线交谈<hr>
 <a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=78590516&Site=auexpress&Menu=yes"><img border="0" SRC=http://wpa.qq.com/pa?p=1:78590516:6 alt="点击这里给我发消息" align="absmiddle"></a><br>
 <a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=102095293&Site=auexpress&Menu=yes"><img border="0" SRC=http://wpa.qq.com/pa?p=1:102095293:6 alt="点击这里给我发消息" align="absmiddle"></a><br>
 <a target="blank" href="http://wpa.qq.com/msgrd?V=1&Uin=59871915&Site=auexpress&Menu=yes"><img border="0" SRC=http://wpa.qq.com/pa?p=1:59871915:6 alt="点击这里给我发消息" align="absmiddle"></a><br>

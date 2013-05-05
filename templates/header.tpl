@@ -56,6 +56,14 @@ border-width: 1px;
 border-color: #E9E9E9;
 margin-left: 10px;
 }
+div.leftcolumn
+{
+background: #FBFBFB;
+padding: 10px;
+border-style: solid; 
+border-width: 1px;
+border-color: #E9E9E9;
+}
 -->
 </style>
 

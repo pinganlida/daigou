@@ -42,16 +42,15 @@ if($_POST['submit'])
 		$error .= '2次密码不一样<br>';
 	}
 	
-
-	
-/*	if(!preg_match('/^[\w\x80-\xff]{3,15}$/', $username))
+	if(!preg_match('/^[a-z\d_]{5,20}$/i', $username))
 	{
 		$error .= '用户名不匹配<br>';
 	}
-	if(!preg_match('/^w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*$/', $email))
+	
+	if(filter_var($email,FILTER_VALIDATE_EMAIL) === false)
 	{
 		$error .= '邮箱不匹配<br>';
-	} */
+	} 
 
 	
 	if(!empty($error))

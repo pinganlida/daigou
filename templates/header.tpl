@@ -46,6 +46,16 @@ color:#E47911;
 font-size: 14px;
 font-family:"ËÎÌו";
 }
+
+div.rightcolumn
+{
+background: #FBFBFB;
+padding: 10px;
+border-style: solid; 
+border-width: 1px;
+border-color: #E9E9E9;
+margin-left: 10px;
+}
 -->
 </style>
 

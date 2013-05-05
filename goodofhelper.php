@@ -9,18 +9,18 @@ $db = new mysqlconnect();
 require('./include/juglogin.php');
 include_once './include/include.php';
 
-$numrows = $db->rownumber(users);
-
+$datarows = $db->query_array("select count(id) from users where feature = 'd';");
+$numrows = $datarows[0][0];
 //设定每一页显示的记录数
-$pagesize = 1;
+$page_daigouize = 1;
 //计算总页数
-$pages=intval($numrows/$pagesize);
-if($numrows%$pagesize)
-	$pages++;
+$page_daigou=intval($numrows/$page_daigouize);
+if($numrows%$page_daigouize)
+	$page_daigou++;
 if(isset($_POST['selectpage']))
 { 
-	if($_POST['selectpage']>$pages)
-		$page  = $pages;
+	if($_POST['selectpage']>$page_daigou)
+		$page  = $page_daigou;
 	elseif ($_POST['selectpage']<=0)
 		$page = 1;
 	else
@@ -33,9 +33,9 @@ else
 	$page = 1; //没有页数则显示第一页；
 }
 //计算记录偏移量
-$offset = ($page-1)*$pagesize;
+$offset = ($page-1)*$page_daigouize;
 
-$sql = "select * from users where feature = 'd' limit $offset,$pagesize";
+$sql = "select * from users where feature = 'd' limit $offset,$page_daigouize";
 $arr = $db->query_array($sql);
 
 $smarty->assign("userslist", $arr);
@@ -43,7 +43,7 @@ $smarty->assign("userslist", $arr);
 $frist = 1;
 $prev =$page-1;
 $next = $page+1;
-$last=$pages;
+$last=$page_daigou;
 if($page>1)
 {
 	$fristpage = "<a href='goodofhelper.php?page=".$frist."'>首页</a>";
@@ -52,7 +52,7 @@ if($page>1)
 	$smarty->assign("Frist", $fristpage);
 	$smarty->assign("Prev", $prevpage);
 }
-if($page<$pages)
+if($page<$page_daigou)
 {
 	$nextpage =  "<a href='goodofhelper.php?page=".$next."'>下一页</a>";
 	$lastpage =  "<a href='goodofhelper.php?page=".$last."'>最后一页</a>";
@@ -60,7 +60,7 @@ if($page<$pages)
 	$smarty->assign("Next", $nextpage);
 	$smarty->assign("Last", $lastpage);
 }
-$totalpage = "共有" .$pages. "页(" .$page. "/" .$pages.")";
+$totalpage = "共有" .$page_daigou. "页(" .$page. "/" .$page_daigou.")";
 $smarty->assign("TotalPage", $totalpage);
 for($i=1; $i<$page; $i++)
 {	
@@ -68,7 +68,7 @@ for($i=1; $i<$page; $i++)
 	$smarty->assign("Currentpage"," $currentpage ");
 }
 $smarty->assign("Displaypage",$page);
-for($i=$page+1; $i<=$pages;$i++)
+for($i=$page+1; $i<=$page_daigou;$i++)
 {
 	$notcurrentpage .= "<a href='goodofhelper.php?page=".$i."'>[".$i."]</a>";
 	$smarty->assign("NotCurrentpage",$notcurrentpage);

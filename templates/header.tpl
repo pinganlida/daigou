@@ -64,6 +64,47 @@ border-style: solid;
 border-width: 1px;
 border-color: #E9E9E9;
 }
+
+div.text
+{
+background: #ffffff;
+font-size: 18px;
+padding: 40px;
+font-family:"黑体";
+border-style: solid; 
+border-width: 0px;
+border-color: #E9E9E9;
+line-height: 200%;
+}
+
+div.contactus
+{
+background: #ffffff;
+font-size: 14px;
+padding: 40px;
+font-family:"黑体";
+border-style: solid; 
+border-width: 0px;
+border-color: #E9E9E9;
+line-height: 200%;
+}
+
+div.faq
+{
+background: #ffffff;
+font-size: 14px;
+padding: 40px;
+font-family:"黑体";
+border-style: solid; 
+border-width: 0px;
+border-color: #E9E9E9;
+line-height: 200%;
+}
+
+a.gotop
+{
+color:#E47911;
+}
 -->
 </style>
 
@@ -103,8 +144,6 @@ border-color: #E9E9E9;
 		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
 		<td class="navigator" width="100px"><a href="./index.php">首页</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./populargoods.php">热门商品</a></td>
-		<td class="navigator" width="10px">|</td>
 		<td class="navigator" width="100px"><a href="./product.php">商品列表</a></td>
 		<td class="navigator" width="10px">|</td>
 		<td class="navigator" width="100px"><a href="./goodofhelper.php">代购员信息</a></td>
@@ -112,6 +151,8 @@ border-color: #E9E9E9;
 		<td class="navigator" width="100px"><a href="./faq.php">常见问题</a></td>
 		<td class="navigator" width="10px">|</td>
 		<td class="navigator" width="100px"><a href="./aboutus.php">关于我们</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="100px"><a href="./contactus.php">联系我们</a></td>
 		<td class="navigator" align="right">
          &nbsp;&nbsp;&nbsp;&nbsp;
 		</td>

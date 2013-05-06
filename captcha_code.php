@@ -3,7 +3,9 @@ session_start();
 $image_width = 120;
 $image_height = 40;
 $characters_on_image = 6;
-$font = './image/monofont.ttf';
+
+$font = realpath("./image/monofont.ttf");
+//echo realpath(".");
 //以下字符将用于验证码中的字符
 //为了避免混淆去掉了数字1和字母i
 $possible_letters = '23456789bcdfghjkmnpqrstvwxyz';

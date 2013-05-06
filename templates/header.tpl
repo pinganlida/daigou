@@ -10,6 +10,7 @@ body
 font-size: 12px;
 background-color:#ffffff;
 font-family:"ËÎÌו";
+text-align: center;
 }
 
 table

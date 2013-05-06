@@ -122,6 +122,7 @@ color:#E47911;
 		{if $islogin == 1}
 			欢迎你 {$username}  | <a href="{$loginmessage}">个人中心  </a>|
 			<a href="./login.php?action=logout">注销</a>
+			<a href="./upload_file.php">上传图片</a>
 		{else}
 			<a href="./register.php">注册</a>
 |			|

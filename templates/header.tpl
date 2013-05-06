@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>视频代购平台</TITLE>
+<TITLE>UPXpost 澳洲最大的华人代购网站</TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
 
 <style type="text/css">
@@ -132,7 +132,7 @@ color:#E47911;
 		<td align="right" valign="bottom">
 		
 		
-		<img src="./image/upxpostlogo.gif"></td>
+		<img src="./image/rightlogo.gif"></td>
 	</tr>
 </table>
 </div>

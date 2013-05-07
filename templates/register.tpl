@@ -1,6 +1,7 @@
 {include file="header.tpl" title=foo}
 <div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
 
+<script type="text/javascript">
 function refreshCaptcha() 
 { 
     var img = document.images['captchaimg']; 

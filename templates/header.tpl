@@ -118,8 +118,8 @@ color:#E47911;
 <div style="width:1280px; border-width:0px; border-style:solid">
 <table width="100%"  height="58px"border="0" >
 	<tr>
-		<td width="410px"><img src="./image/upxpostlogo.gif"></td>
-		<td width="450px" align = "right" valign="bottom" align="left">
+		<td width="250px"><img src="./image/upxlogo2.gif"></td>
+		<td align = "left" valign="bottom" align="left">
 		{if $islogin == 1}
 			欢迎你 {$username}  | <a href="{$loginmessage}">个人中心  </a>|
 			<a href="./login.php?action=logout">注销</a>
@@ -134,7 +134,7 @@ color:#E47911;
 		<td align="right" valign="bottom">
 		
 		
-		<img src="./image/rightlogo.gif"></td>
+		<img src="./image/rightlogo2.gif"></td>
 	</tr>
 </table>
 </div>

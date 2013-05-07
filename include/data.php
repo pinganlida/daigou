@@ -1,0 +1,9 @@
+<?php
+$category["milkpowder"]="ÄÌ·Û";
+$category["health"]="±£½¡Æ·";
+$category["skin"]="»¤·ôÆ·";
+$category["ugg"]="Ñ©µØÑ¥";
+$category["wine"]="ºì¾Æ";
+
+
+?>

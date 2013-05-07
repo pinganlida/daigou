@@ -106,9 +106,25 @@ a.gotop
 {
 color:#E47911;
 }
+
+table.menu
+{
+font-size:100%;
+position:absolute;
+visibility:hidden;
+}
 -->
 </style>
-
+<script type="text/javascript">
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible"
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden"
+}
+</script>
 </HEAD>
 
 
@@ -121,9 +137,15 @@ color:#E47911;
 		<td width="250px"><img src="./image/upxlogo2.gif"></td>
 		<td align = "left" valign="bottom" align="left">
 		{if $islogin == 1}
-			欢迎你 {$username}  | <a href="{$loginmessage}">个人中心  </a>|
-			<a href="./login.php?action=logout">注销</a>
-			<a href="./upload_file.php">上传图片</a>
+			欢迎你 {$username}  | 
+			<td onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心
+   				<table class="menu" id="register" width="120" >
+  					<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
+  					<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
+					<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
+					<tr><td class="menu"><a href="">查询历史交易记录</a></td></tr>
+  				</table>
+  			</td>
 		{else}
 			<a href="./register.php">注册</a>
 |			|
@@ -160,7 +182,13 @@ color:#E47911;
 		</td>
 	</tr>
 </table>
-
-
-
 </div>
+</body>
+
+</html>
+
+
+
+
+
+

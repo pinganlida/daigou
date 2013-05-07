@@ -107,11 +107,22 @@ a.gotop
 color:#E47911;
 }
 
+a.menu
+{
+font-size: 14px;
+}
+
+
 div.menu
 {
 font-size:100%;
 position:absolute;
 visibility:hidden;
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-top: 0px solid black;
+border-bottom: 1px solid black;
+background-image: url(./image/menubackground.gif);
 }
 table.menu
 {
@@ -145,14 +156,7 @@ document.getElementById(elmnt).style.visibility="hidden"
 		{if $islogin == 1}
 			欢迎你 {$username}  | 
 			<span onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心</span>
-				<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
-   				<table width="120" >
-  					<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
-  					<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
-					<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
-					<tr><td class="menu"><a href="">查询历史交易记录</a></td></tr>
-  				</table>
-  				</div>
+				
   				  			
 		{else}
 			<a href="./register.php">注册</a>
@@ -176,7 +180,7 @@ document.getElementById(elmnt).style.visibility="hidden"
 		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
 		<td class="navigator" width="100px"><a href="./index.php">首页</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./product.php">商品列表</a></td>
+		<td class="navigator" width="100px"><a href="./product.php" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">商品列表</a></td>
 		<td class="navigator" width="10px">|</td>
 		<td class="navigator" width="100px"><a href="./goodofhelper.php">代购员信息</a></td>
 		<td class="navigator" width="10px">|</td>
@@ -191,6 +195,32 @@ document.getElementById(elmnt).style.visibility="hidden"
 	</tr>
 </table>
 </div>
+
+
+<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
+<table width="120">
+	<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
+	<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
+	<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
+	<tr><td class="menu"><a href="">查询历史交易记录</a></td></tr>
+</table>
+</div>
+
+
+<div class="menu" id="productlist" style="position: absolute; float: left; left: 173px; top: 118px; z-index: 1;" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">
+<table width="120">
+	<tr><td class="menu"><a class="menu" href="./product.php">全部商品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=milkpowder">奶粉</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=health">保健品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=skincare">护肤品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=essentialoil">精油</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=wine">红酒</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=ugg">雪地靴</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=skin">皮草</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=luxry">奢侈品</a></td></tr>
+</table>
+</div>
+
 </body>
 
 </html>

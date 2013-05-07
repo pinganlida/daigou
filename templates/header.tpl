@@ -107,6 +107,12 @@ a.gotop
 color:#E47911;
 }
 
+div.menu
+{
+font-size:100%;
+position:absolute;
+visibility:hidden;
+}
 table.menu
 {
 font-size:100%;
@@ -138,14 +144,16 @@ document.getElementById(elmnt).style.visibility="hidden"
 		<td align = "left" valign="bottom" align="left">
 		{if $islogin == 1}
 			欢迎你 {$username}  | 
-			<td onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心
-   				<table class="menu" id="register" width="120" >
+			<span onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心</span>
+				<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
+   				<table width="120" >
   					<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
   					<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
 					<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
 					<tr><td class="menu"><a href="">查询历史交易记录</a></td></tr>
   				</table>
-  			</td>
+  				</div>
+  				  			
 		{else}
 			<a href="./register.php">注册</a>
 |			|

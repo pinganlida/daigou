@@ -22,7 +22,7 @@
 		{$Displaypage}
 		{$NotCurrentpage}
 		
-		<form name="selectpages" action="product.php" method="post">
+		<form name="selectpages" action="goodofhelper.php" method="post">
 		<input id="selectpage"  name="selectpage" type="text"><br>
 		<input type="submit" name="submit" value="ÌøÒ³   ">
 		</td>

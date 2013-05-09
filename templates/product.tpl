@@ -12,6 +12,9 @@
 				<td>
 				{$productlist[outer].description}
 				</td>
+				<td>
+				{$productlist[outer].description}
+				</td>
 			</tr>
 		{/section}
 		</table>

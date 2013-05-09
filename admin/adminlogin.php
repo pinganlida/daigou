@@ -1,0 +1,43 @@
+<?php
+session_start();
+
+require('./libs/Smarty.class.php');
+require('./include/mysql.php');
+
+$smarty = new Smarty;
+$db = new mysqlconnect();
+
+include_once './include/include.php';
+session_start();
+
+//注销登录
+if($_POST['submit'])
+{
+
+	$adminusername = $_POST['adminusername'];
+	$password = MD5($_POST['password']);
+
+	//检测用户名及密码是否正确
+
+	$sql = "select * from admin where username='$adminusername' and password = '$password'";
+	//echo $sql;
+	$arr = $db->query_array($sql);
+	//$arr = array(1);
+
+	if(count($arr)>0)
+	{
+		//登录成功
+		$_SESSION['adminusername'] = $adminusername;
+		//$_SESSION['id'] = $arr[0][id];
+		//$smarty->assign("logoutmessage","login.php?action=logout",true);
+		header("Location: adminmenu.php");
+	}
+	else
+	{
+		$smarty->assign("message","登录失败,请重新登录");
+		//$smarty->assign("link","登录失败！ <a href=\"login.php\">重新登录</a>");
+	}
+}
+$smarty->display('adminlogin.tpl');
+$db->disconnect();
+?>

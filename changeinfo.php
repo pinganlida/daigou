@@ -18,6 +18,7 @@ if($ist == true)
 
 		$email = $_POST['email'];
 		$gender = $_POST['gender'];
+		$phone = $_POST['phone'];
 		$address = $_POST['address'];
 		$postcode = $_POST['postcode'];
 		$country = $_POST['country'];
@@ -29,7 +30,18 @@ if($ist == true)
 		{
 			$error .= '邮箱不匹配<br>';
 		}
-
+		if(strlen($address)>200)
+		{
+			$error .= '输入地址长度过长';
+		}
+		if(strlen($postcode)>10)
+		{
+			$error .= '输入邮编过长';
+		}
+		if(strlen($phone)>20)
+		{
+			$error .= '输入电话号码过长';
+		}
 		if(!empty($error))
 		{
 			$smarty->assign("error", $error);
@@ -40,7 +52,8 @@ if($ist == true)
 			$address = addslashes($address);
 			$postcode = addslashes($postcode);
 			
-			$sql_query = "UPDATE users SET email = '$email',gender = '$gender',address = '$address', postcode = '$postcode',country = '$country'
+			$sql_query = "UPDATE users SET email = '$email',gender = '$gender',
+							address = '$address', postcode = '$postcode',country = '$country',phone = '$phone'
 			WHERE username = '$username';";
 			$db->query($sql_query);
 			

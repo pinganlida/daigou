@@ -20,6 +20,7 @@
 		男<input type="radio" id="gender" name="gender" value="m" />
 		女<input type="radio" id="gender" checked="checked" name="gender" value="f" /><br />
 		{/if}
+		电话：   <input id="phone" name="phone" type="text" value="{$input.phone}"><br>
 		地址: <input id="address" name="address" type="text" value="{$input.address}"><br>
 		邮编: <input id="postcode" name="postcode" type="text" value="{$input.postcode}"><br>
 		国家: <input id="country" name="country" type="text" value="{$input.country}"><br>

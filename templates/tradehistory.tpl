@@ -1,4 +1,5 @@
 {include file="header.tpl" title=foo}
+{if count($error) eq 0}
 <h1>历史交易列表</h1>
 <div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
 <table width="100%" border="0">
@@ -49,7 +50,10 @@
 		{include file="rightcolumn.tpl" title=foo}
 		</td>
 	</tr>
-	
 </table>
 </div>
+{/if}
+{if count($error) gt 0}
+{$error}
+{/if}
 {include file="footer.tpl"}

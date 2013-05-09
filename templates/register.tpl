@@ -8,7 +8,7 @@ function refreshCaptcha()
     img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000; 
 } 
 </script>
-
+{if $error }
 
 <table width="100%" border="0">
 	<tr>
@@ -25,7 +25,7 @@ function refreshCaptcha()
 	 	无法读图片吗？点击 <a href='javascript: refreshCaptcha();'>here</a> 刷新  <br>	
 		<input type="submit" name="submit" value="  提交注册  ">
 	<hr>
-	{$Error}
+	{$error}
 	{if count($message) gt 0}
 		<a href="{$message}">返回主页</a><br/>
 	{/if}

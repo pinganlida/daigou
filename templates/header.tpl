@@ -202,7 +202,7 @@ document.getElementById(elmnt).style.visibility="hidden"
 	<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
 	<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
 	<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
-	<tr><td class="menu"><a href="">查询历史交易记录</a></td></tr>
+	<tr><td class="menu"><a href="./tradehistory.php">查询历史交易记录</a></td></tr>
 </table>
 </div>
 

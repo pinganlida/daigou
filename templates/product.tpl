@@ -4,6 +4,23 @@
 	<tr>
 		<td width="70%" valign="top">
 		<table border=1>	
+		
+		<tr>
+				<td>
+				商品名称
+				</td>
+				<td>
+				商品描述
+				</td>
+			
+				
+				<td width="100">				
+				数量
+				</td>
+				<td width="100">
+				购买
+				</td>
+			</tr>
 		{section name=outer loop=$productlist}
 			<tr>
 				<td>
@@ -12,8 +29,13 @@
 				<td>
 				{$productlist[outer].description}
 				</td>
-				<td>
-				{$productlist[outer].description}
+			
+				
+				<td width="100">				
+				<input id="quantity" name="quantity" value="1" type="input">
+				</td>
+				<td width="100">
+				<a href="./addtocart.php?productid={$productlist[outer].id}">放入购物车</a>
 				</td>
 			</tr>
 		{/section}
@@ -38,5 +60,6 @@
 	</tr>
 	
 </table>
+
 </div>
 {include file="footer.tpl"}

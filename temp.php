@@ -4,5 +4,5 @@
 // $newid = $db->query_insert($sql);
 //echo "newid = ".$newid;
 
-echo $db->rownumber("product");
+phpinfo();
 ?>

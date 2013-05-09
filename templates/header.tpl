@@ -163,7 +163,7 @@ document.getElementById(elmnt).style.visibility="hidden"
 |			|
 			<a href="./login.php">登陆</a>
 		{/if}
-		| 购物车 <img src="./image/chart.gif">
+		| <a href="./cart.php">购物车 </a> <a href="./cart.php"><img src="./image/chart.gif"></a>
 		</td>
 		<td align="right" valign="bottom">
 		

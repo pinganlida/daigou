@@ -2,7 +2,7 @@
 require('./libs/Smarty.class.php');
 require('./include/mysql.php');
 
-
+require('./include/cartclass.php');
 $smarty = new Smarty;
 $db = new mysqlconnect();
 require('./include/juglogin.php');

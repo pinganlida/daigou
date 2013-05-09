@@ -8,8 +8,6 @@ function refreshCaptcha()
     img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000; 
 } 
 </script>
-{if $error }
-
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">

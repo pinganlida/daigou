@@ -12,7 +12,7 @@ include_once './include/include.php';
 // $smarty->caching = true;
 // $smarty->cache_lifetime = 120;
 //echo realpath("./image/monofont.ttf");
-
+print_r($_SESSION["cart"]);
 $smarty->display('index.tpl');
 $db->disconnect();
 ?>

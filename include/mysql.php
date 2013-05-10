@@ -5,7 +5,7 @@ class mysqlconnect{
 	private $username = "root";
 	private $password = "guitar";
 	private $port = "3306";
-	private $showsql = true;
+	private $showsql = false;
 	
 	function mysqlconnect(){
 		if($this->link==null)

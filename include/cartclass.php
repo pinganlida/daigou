@@ -193,7 +193,7 @@ class CartTool {
 
 
 //print_r(CartTool::getCart());
-
+// $cart = CartTool::getCart();
 
 //$cart = CartTool::getCart();
 // if (!isset($_GET['test'])) {

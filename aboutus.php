@@ -12,6 +12,7 @@ include_once './include/include.php';
 // $smarty->caching = true;
 // $smarty->cache_lifetime = 120;
 
+$smarty->assign("domainname",$domainname);
 $smarty->display('aboutus.tpl');
 // $db->disconnect();
 ?>

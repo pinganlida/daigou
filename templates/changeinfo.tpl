@@ -6,7 +6,7 @@
 		<h1>ÐÅÏ¢ÐÞ¸Ä</h1>
 		<hr>
 		{if count($notlogin) gt 0}
-			{$notlogin}<a href="login.php">µÇÂ½</a><br/>
+			{$notlogin}<a href="{$domainname}/login.php">µÇÂ½</a><br/>
 		{/if}
 		{if count($notlogin) == 0}
 		<form name="ChangeForm" action="changeinfo.php" method="post">

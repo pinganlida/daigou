@@ -84,6 +84,7 @@ else
 {
 	$smarty->assign("error","ÇëÏÈµÇÂ¼",true);
 }
+$smarty->assign("domainname",$domainname);
 $smarty->display('tradehistory.tpl');
 $db->disconnect();
 ?>

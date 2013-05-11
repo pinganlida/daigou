@@ -12,28 +12,12 @@ function issessionstart()
 		return false;
 }
 
+if($_SERVER["SERVER_NAME"]=="web420939.dnsvhost.com")
+// 	$domainname="http://www.upxpost.com";
+	$domainname=".";
+else
+	$domainname="http://localhost/daigou";
 
-function currentpageurl()
-{
-	$pageURL = 'http';
 
-	if ($_SERVER["HTTPS"] == "on")
-	{
-		$pageURL .= "s";
-	}
-	$pageURL .= "://";
-
-	if ($_SERVER["SERVER_PORT"] != "80")
-	{
-		$pageURL .= $_SERVER["SERVER_NAME"] . ":" . $_SERVER["SERVER_PORT"] . $_SERVER["REQUEST_URI"];
-	}
-	else
-	{
-		$pageURL .= $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
-	}
-	return $pageURL;
-}
-
-// print_r($_SEESION);
 
 ?>

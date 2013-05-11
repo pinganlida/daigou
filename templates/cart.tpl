@@ -23,7 +23,7 @@
 				<input name="quantityid" value="{$productlist[outer].id}" type="hidden">
 				</td>
 				
-				<td><a href="./cart.php?delete={$productlist[outer].id}">移除商品</a></td>
+				<td><a href="{$domainname}/cart.php?delete={$productlist[outer].id}">移除商品</a></td>
 			<tr>
 			</form>
 		{/section}

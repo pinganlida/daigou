@@ -33,6 +33,7 @@ if($_POST['submit'])
 		$smarty->assign("UploadfileError","Invalid file",true);
 	}
 }
+$smarty->assign("domainname",$domainname);
 $smarty->display('upload_file.tpl');
 $db->disconnect();
 ?>

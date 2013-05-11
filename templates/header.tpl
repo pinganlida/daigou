@@ -164,25 +164,25 @@ document.getElementById(elmnt).style.visibility="hidden";
 <body align = "center">
 <div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
 <table width="120">
-	<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
-	<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
-	<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
-	<tr><td class="menu"><a href="./tradehistory.php">查询历史交易记录</a></td></tr>
+	<tr><td class="menu"><a href="{$domainname}/changeinfo.php">修改个人资料</a></td></tr>
+	<tr><td class="menu"><a href="{$domainname}/login.php?action=logout">注销</a></td></tr>
+	<tr><td class="menu"><a href="{$domainname}/upload_file.php">上传图片</a></td></tr>
+	<tr><td class="menu"><a href="{$domainname}/tradehistory.php">查询历史交易记录</a></td></tr>
 </table>
 </div>
 
 
 <div class="menu" id="productlist" style="position: absolute;  left: 350px; top: 118px; z-index: 1;" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">
 <table width="120">
-	<tr><td class="menu"><a class="menu" href="./product.php">全部商品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=milkpowder">奶粉</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=health">保健品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=skincare">护肤品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=essentialoil">精油</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=wine">红酒</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=ugg">雪地靴</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=skin">皮草</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=luxry">奢侈品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php">全部商品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=milkpowder">奶粉</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=health">保健品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=skincare">护肤品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=essentialoil">精油</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=wine">红酒</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=ugg">雪地靴</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=skin">皮草</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="{$domainname}/product.php?product=luxry">奢侈品</a></td></tr>
 </table>
 </div>
 
@@ -198,11 +198,11 @@ document.getElementById(elmnt).style.visibility="hidden";
 				
   				  			
 		{else}
-			<a href="./register.php">注册</a>
+			<a href="{$domainname}/register.php">注册</a>
 |			|
-			<a href="./login.php">登陆</a>
+			<a href="{$domainname}/login.php">登陆</a>
 		{/if}
-		| <a href="./cart.php">购物车 </a> <a href="./cart.php"><img src="./image/chart.gif"></a>
+		| <a href="{$domainname}/cart.php">购物车 </a> <a href="{$domainname}/cart.php"><img src="./image/chart.gif"></a>
 		</td>
 		<td align="right" valign="bottom">
 		
@@ -217,17 +217,17 @@ document.getElementById(elmnt).style.visibility="hidden";
 <table width="1280px"  height="45px" background="./image/navigator2.gif" border="0" >
 	<tr>
 		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
-		<td class="navigator" width="100px"><a href="./index.php">首页</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/index.php">首页</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./product.php" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">商品列表</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/product.php" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">商品列表</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./goodofhelper.php">代购员信息</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/goodofhelper.php">代购员信息</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./faq.php">常见问题</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/faq.php">常见问题</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./aboutus.php">关于我们</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/aboutus.php">关于我们</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="./contactus.php">联系我们</a></td>
+		<td class="navigator" width="100px"><a href="{$domainname}/contactus.php">联系我们</a></td>
 		<td class="navigator" align="right">
          &nbsp;&nbsp;&nbsp;&nbsp;
 		</td>

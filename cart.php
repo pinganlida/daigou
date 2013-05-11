@@ -68,7 +68,7 @@ for($i=0;$i<$number;$i++){
 
 $smarty->assign("productlist",$_SESSION["cart"]);
 $smarty->assign("totalprice",$totalprice);
-
+$smarty->assign("domainname",$domainname);
 $smarty->display('cart.tpl');
 $db->disconnect();
 ?>

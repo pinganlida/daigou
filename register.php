@@ -110,7 +110,7 @@ else
 //$smarty->assign("header2",$smarty->fetch("header2.tpl"));
 
 
-
+$smarty->assign("domainname",$domainname);
 $smarty->display('register.tpl');
 
 ?>

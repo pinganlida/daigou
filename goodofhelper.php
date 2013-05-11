@@ -73,7 +73,7 @@ for($i=$page+1; $i<=$page_daigou;$i++)
 	$notcurrentpage .= "<a href='goodofhelper.php?page=".$i."'>[".$i."]</a>";
 	$smarty->assign("NotCurrentpage",$notcurrentpage);
 }
-
+$smarty->assign("domainname",$domainname);
 $smarty->display('goodofhelper.tpl');
 $db->disconnect();
 ?>

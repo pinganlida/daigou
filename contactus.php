@@ -11,7 +11,7 @@ include_once './include/include.php';
 // $smarty->debugging = true;
 // $smarty->caching = true;
 // $smarty->cache_lifetime = 120;
-
+$smarty->assign("domainname",$domainname);
 $smarty->display('contactus.tpl');
 // $db->disconnect();
 ?>

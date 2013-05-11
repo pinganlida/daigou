@@ -13,6 +13,9 @@ include_once './include/include.php';
 // $smarty->cache_lifetime = 120;
 //echo realpath("./image/monofont.ttf");
 // print_r($_SESSION["cart"]);
+// echo $domainname;
+
+$smarty->assign("domainname",$domainname);
 $smarty->display('index.tpl');
 $db->disconnect();
 ?>

@@ -69,5 +69,6 @@ else
 {
 	$smarty->assign("notlogin", "ÇëÏÈµÇÂ¼",true);
 }
+$smarty->assign("domainname",$domainname);
 $smarty->display('changeinfo.tpl');
 ?>

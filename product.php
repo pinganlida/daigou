@@ -10,6 +10,7 @@ include_once './include/include.php';
 
 $numrows = $db->rownumber(product);
 
+
 //设定每一页显示的记录数
 $pagesize = 3;
 //计算总页数
@@ -72,7 +73,7 @@ for($i=$page+1; $i<=$pages;$i++)
 	$notcurrentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
 	$smarty->assign("NotCurrentpage",$notcurrentpage);
 }
-
+$smarty->assign("domainname",$domainname);
 $smarty->display('product.tpl');
 $db->disconnect();
 ?>

@@ -5,13 +5,13 @@
 <div width="100%" class="rightcolumn" style="line-height: 200%;">
 <img width="15px" src="./image/icon2.gif"> 常见问题
 <hr>
-<li><a href="./faq.php#1">我们的货源可靠吗</a><br>
-<li><a href="./faq.php#2">如果代购员买到假货怎么办?</a><br>
-<li><a href="./faq.php#3">货物如何运输到中国?大概要多久收到?海关会找麻烦吗?</a><br>
-<li><a href="./faq.php#4">如何网上支付</a><br>
-<li><a href="./faq.php#5">澳洲奶粉品牌简要介绍</a><br>
-<li><a href="./faq.php#6">该买什么牌子的奶粉? 能简单介绍一下澳洲的奶粉吗?</a><br>
-<li><a href="./faq.php#7">如果我对货物不满意的话怎么办，能更换或者退款吗？</a><br>
+<li><a href="{$domainname}/faq.php#1">我们的货源可靠吗</a><br>
+<li><a href="{$domainname}/faq.php#2">如果代购员买到假货怎么办?</a><br>
+<li><a href="{$domainname}/faq.php#3">货物如何运输到中国?大概要多久收到?海关会找麻烦吗?</a><br>
+<li><a href="{$domainname}/faq.php#4">如何网上支付</a><br>
+<li><a href="{$domainname}/faq.php#5">澳洲奶粉品牌简要介绍</a><br>
+<li><a href="{$domainname}/faq.php#6">该买什么牌子的奶粉? 能简单介绍一下澳洲的奶粉吗?</a><br>
+<li><a href="{$domainname}/faq.php#7">如果我对货物不满意的话怎么办，能更换或者退款吗？</a><br>
 </div>
 
 <br>
@@ -55,5 +55,5 @@
 <div width="100%" class="rightcolumn">
 <img width="15px" src="./image/icon2.gif"> 公司地址:
 <hr>
-<a href="./contactus.php"><img width="250" src ="./image/address.jpg"></a>
+<a href="{$domainname}/contactus.php"><img width="250" src ="./image/address.jpg"></a>
 </div>

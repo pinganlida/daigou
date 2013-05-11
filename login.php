@@ -39,6 +39,7 @@ if($_POST['submit'])
 		//$smarty->assign("link","µÇÂ¼Ê§°Ü£¡ <a href=\"login.php\">ÖØĞÂµÇÂ¼</a>");
 	}
 }
+$smarty->assign("domainname",$domainname);
 $smarty->display('login.tpl');
 $db->disconnect();
 ?>

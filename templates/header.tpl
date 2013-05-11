@@ -48,6 +48,11 @@ font-size: 14px;
 font-family:"ËÎÌו";
 }
 
+div
+{
+margin: 0 auto;
+}
+
 div.rightcolumn
 {
 background: #FBFBFB;

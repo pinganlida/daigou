@@ -7,19 +7,25 @@
 		<h2> <img width="15px" src="./image/icon2.gif"> 关于我们 </h2>	
 		<hr>
 		<br>
-	
+		<font color=red>{$error}</font>
 		<table width="100%" border=1>
 			
 		{section name=outer loop=$productlist}
+		<form method="post" action="">
 			<tr>
 				<td>{$productlist[outer].id}</td>
 				<td>{$productlist[outer].name}</td>
-				<td>{$productlist[outer].price}</td>
-				<td>{$productlist[outer].quantity}</td>
-				<td>修改数量</td>
+				<td>{$productlist[outer].price}</td>				
+				<td>{$productlist[outer].quantity}</td>				
+				<td>
+				<input name="submit" type="submit" value="修改数量">
+				<input name="quantity" value="{$productlist[outer].quantity}" type="input" size="4">
+				<input name="quantityid" value="{$productlist[outer].id}" type="hidden">
+				</td>
+				
 				<td><a href="./cart.php?delete={$productlist[outer].id}">移除商品</a></td>
 			<tr>
-	
+			</form>
 		{/section}
 	
 		</table>	

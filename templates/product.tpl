@@ -11,12 +11,9 @@
 				</td>
 				<td>
 				商品描述
-				</td>
-			
+				</td>			
 				
-				<td width="100">				
-				数量
-				</td>
+
 				<td width="100">
 				购买
 				</td>
@@ -30,10 +27,7 @@
 				{$productlist[outer].description}
 				</td>
 			
-				
-				<td width="100">				
-				<input id="quantity" name="quantity" value="1" type="input">
-				</td>
+	
 				<td width="100">
 				<a target=_blank href="./addtocart.php?productid={$productlist[outer].id}">放入购物车</a>
 				</td>

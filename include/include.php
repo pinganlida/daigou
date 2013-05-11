@@ -34,6 +34,6 @@ function currentpageurl()
 	return $pageURL;
 }
 
-print_r($_SEESION);
+// print_r($_SEESION);
 
 ?>

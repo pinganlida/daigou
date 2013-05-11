@@ -140,11 +140,20 @@ visibility:hidden;
 <script type="text/javascript">
 function showmenu(elmnt)
 {
-document.getElementById(elmnt).style.visibility="visible"
+var offset = 174;
+if(elmnt=="productlist")
+	offset = 174;
+if(elmnt=="register")
+	offset = 350;
+if(document.body.clientWidth<1280)
+	document.getElementById(elmnt).style.left =offset;
+else
+	document.getElementById(elmnt).style.left = (document.body.clientWidth-1280)/2+offset-8;
+document.getElementById(elmnt).style.visibility="visible";
 }
 function hidemenu(elmnt)
 {
-document.getElementById(elmnt).style.visibility="hidden"
+document.getElementById(elmnt).style.visibility="hidden";
 }
 </script>
 </HEAD>
@@ -153,6 +162,31 @@ document.getElementById(elmnt).style.visibility="hidden"
 
 
 <body align = "center">
+<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
+<table width="120">
+	<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
+	<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
+	<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
+	<tr><td class="menu"><a href="./tradehistory.php">查询历史交易记录</a></td></tr>
+</table>
+</div>
+
+
+<div class="menu" id="productlist" style="position: absolute;  left: 350px; top: 118px; z-index: 1;" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">
+<table width="120">
+	<tr><td class="menu"><a class="menu" href="./product.php">全部商品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=milkpowder">奶粉</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=health">保健品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=skincare">护肤品</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=essentialoil">精油</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=wine">红酒</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=ugg">雪地靴</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=skin">皮草</a></td></tr>
+	<tr><td class="menu"><a class="menu" href="./product.php?product=luxry">奢侈品</a></td></tr>
+</table>
+</div>
+
+
 <div style="width:1280px; border-width:0px; border-style:solid">
 <table width="100%"  height="58px"border="0" >
 	<tr>
@@ -202,29 +236,7 @@ document.getElementById(elmnt).style.visibility="hidden"
 </div>
 
 
-<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
-<table width="120">
-	<tr><td class="menu"><a href="./changeinfo.php">修改个人资料</a></td></tr>
-	<tr><td class="menu"><a href="./login.php?action=logout">注销</a></td></tr>
-	<tr><td class="menu"><a href="./upload_file.php">上传图片</a></td></tr>
-	<tr><td class="menu"><a href="./tradehistory.php">查询历史交易记录</a></td></tr>
-</table>
-</div>
 
-
-<div class="menu" id="productlist" style="position: absolute; float: left; left: 173px; top: 118px; z-index: 1;" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">
-<table width="120">
-	<tr><td class="menu"><a class="menu" href="./product.php">全部商品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=milkpowder">奶粉</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=health">保健品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=skincare">护肤品</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=essentialoil">精油</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=wine">红酒</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=ugg">雪地靴</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=skin">皮草</a></td></tr>
-	<tr><td class="menu"><a class="menu" href="./product.php?product=luxry">奢侈品</a></td></tr>
-</table>
-</div>
 
 </body>
 

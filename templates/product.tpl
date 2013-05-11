@@ -35,7 +35,7 @@
 				<input id="quantity" name="quantity" value="1" type="input">
 				</td>
 				<td width="100">
-				<a href="./addtocart.php?productid={$productlist[outer].id}">放入购物车</a>
+				<a target=_blank href="./addtocart.php?productid={$productlist[outer].id}">放入购物车</a>
 				</td>
 			</tr>
 		{/section}

@@ -39,7 +39,7 @@ $_SESSION["cart"][$number]["quantity"] =  1;
 
 
 
-print_r($_SESSION);
+// print_r($_SESSION);
 
 $smarty->display('addtocart.tpl');
 $db->disconnect();

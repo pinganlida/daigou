@@ -182,15 +182,15 @@ urlArray[2] = "./image/alipay.jpg";
 
 
 banArray[0] = new Image(468, 60);
-banArray[0].src = "./image/china.jpg";
+banArray[0].src = "./image/mychemist_ad.jpg";
 banArray[1] = new Image(468, 60);
-banArray[1].src = "./image/australia.gif";
+banArray[1].src = "./image/coles_ad.jpg";
 banArray[2] = new Image(468, 60);
-banArray[2].src = "./image/alipay.jpg";
+banArray[2].src = "./image/woolworth_ad.jpg";
 banArray[3] = new Image(468, 60);
-banArray[3].src = "./image/penford.jpg";
+banArray[3].src = "./image/aldi_ad.jpg";
 banArray[4] = new Image(468, 60);
-banArray[4].src = "./image/rightlogo.gif";
+banArray[4].src = "./image/liquorland_ad.jpg";
 
 shopArray[0]="mychemist";
 shopArray[1]="coles";
@@ -198,11 +198,11 @@ shopArray[2]="woolworth";
 shopArray[3]="aldi";
 shopArray[4]="liquorland";
 
-adTextArray[0] = "澳洲一家大型连锁药店，拥有全部奶粉";
-adTextArray[1] = "coles是澳洲最大的超市！";
-adTextArray[2] = "Woolworth和Safeway是同一家";
-adTextArray[3] = "ALDI是最便宜的仓储超市";
-adTextArray[4] = "Liquorland是澳洲人常见的买酒的超市";
+adTextArray[0] = "澳洲一家大型连锁药店，拥有全部奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉奶粉";
+adTextArray[1] = "coles是澳洲最大的超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市！";
+adTextArray[2] = "Woolworth和Safeway是同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家同一家";
+adTextArray[3] = "ALDI是最便宜的仓储超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市超市";
+adTextArray[4] = "Liquorland是澳洲人常见的买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市买酒的超市";
 
 
 

@@ -18,6 +18,4 @@ if($_SERVER["SERVER_NAME"]=="web420939.dnsvhost.com")
 else
 	$domainname="http://localhost/daigou";
 
-
-
 ?>

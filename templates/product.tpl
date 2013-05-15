@@ -27,7 +27,7 @@
 				<td>
 				{$productlist[outer].name}<br>
 				¼Û¸ñ: {$productlist[outer].price} Ôª<br>
-				ÃèÊö: {$productlist[outer].description|truncate_cn:"500"}				
+				ÃèÊö: {$productlist[outer].description|truncate:"500"}				
 				</td>
 			
 	

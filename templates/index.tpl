@@ -1,62 +1,34 @@
 {include file="header.tpl" title=foo}
 <div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
-<table width="100%" border="1">
+<table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">
-		<table width="100%" border="1">
+		
+		
+		<table width="100%" border="0" >
 			<tr>
-				<td height="70" valign="top">
-				宝宝专区
+				<td valign="top" width="190">
+				<div class="leftcolumn" style="width: 100%;">				
+				<img id="mychemist"  width="180" src ="./image/mychemist.jpg"       onMouseOver="stopchangebanner(); changeBanner(0); focusOn(0);" onMouseOut="startchangebanner();"><br><br>
+				<img id="coles"      width="180" src ="./image/coles.jpg"           onMouseOver="stopchangebanner(); changeBanner(1); focusOn(1);" onMouseOut="startchangebanner();"><br><br>
+				<img id="woolworth"  width="180" src ="./image/woolworths.gif"      onMouseOver="stopchangebanner(); changeBanner(2); focusOn(2);" onMouseOut="startchangebanner();"><br><br>	
+				<img id="aldi"       width="180" src ="./image/aldi2.gif"           onMouseOver="stopchangebanner(); changeBanner(3); focusOn(3);" onMouseOut="startchangebanner();"><br><br>				
+				<img id="liquorland" width="180" src ="./image/liquorland.jpg"      onMouseOver="stopchangebanner(); changeBanner(4); focusOn(4);" onMouseOut="startchangebanner();">
+				</div>
 				</td>
-				<td width="70%" rowspan="4">
+				<td valign = "top">
+				<div id="mychemistdiv" class="leftcolumn" style="display:none;">
+				testtesttesttesttesttesttesttesttesttest
+				</div>
+				<img id="adindex" src="./image/china.jpg" width=517 height=380 border=0 name="banner" onMouseOver="stopchangebanner();" onMouseOut="startchangebanner();">
 				</td>
-			</tr>
-			<tr>
-				<td height="70" valign="top">
-				妈妈专区				
+				<td id="adtext" width ="160" valign="top">
 				</td>
-			</tr>
-			<tr>
-				<td height="70" valign="top">
-				女性专区				
-				</td>
-			</tr>
-			<tr>
-				<td height="70" valign="top">
-				老人专区				
-				</td>
-			</tr>
+			</tr>			
 		</table>
 		
 		<hr>
-		<div id="focus">
-                    <div id="banner">
-                        <div id="banner_bg">
-                        </div>
-                        <div id="banner_info">
-                        </div>
-                        <ul>
-                            <li class="on">1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
-                        <div id="banner_list">
-                            <a href="/zt/mihoutao" target="_blank">
-                                <img src="http://oss.aliyuncs.com/wlww/ad/mihoutao.jpg" title="" alt="全球精选ENZA黄金猕猴桃火热预售中，一次购买5盒以上可享受10%折扣..." /></a>
-                            <a href="http://www.woliwowai.com/group/1.html" target="_blank" style="display: none">
-                                <img src="http://oss.aliyuncs.com/wlww/ad/index_infapure01.jpg" title="" alt="纯正新西兰好奶，Infapure纯净宝互动活动进行中..." /></a>
-                            <a href="http://www.woliwowai.com/zt/2012/nbst/index.htm" target="_blank" style="display: none">
-                                <img src="http://oss.aliyuncs.com/wlww/ad/index_nbst.jpg" title="" alt="100%新西兰资深营养配方奶粉---纽贝斯特,妈妈心中金牌奶粉，火热预售中" /></a>
-                            <a href="/shop/?t=3" style="display: none">
-                                <img src="http://oss.aliyuncs.com/wlww/ad/index_karicare.jpg" title="" alt="新西兰纯天然牧场，世界上最好的奶源地" /></a>
-                        </div>
-                    </div>
-                </div>
-		
-		<hr>
-		
-		
+
 		
 		<h2> <img width="15px" src="./image/icon2.gif"> 热门商品 </h2>	
 		<hr>

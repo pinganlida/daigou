@@ -65,7 +65,7 @@ margin-left: 10px;
 div.leftcolumn
 {
 background: #FBFBFB;
-padding: 10px;
+padding: 4px;
 border-style: solid; 
 border-width: 1px;
 border-color: #E9E9E9;
@@ -135,8 +135,15 @@ font-size:100%;
 position:absolute;
 visibility:hidden;
 }
+
+img.focus
+{
+padding:3px;
+border:5px solid #ccc;
+}
 -->
 </style>
+
 <script type="text/javascript">
 function showmenu(elmnt)
 {
@@ -156,6 +163,102 @@ function hidemenu(elmnt)
 document.getElementById(elmnt).style.visibility="hidden";
 }
 </script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var arrayLength=5;
+var urlArray = new Array(arrayLength); 
+var banArray = new Array(arrayLength);
+var shopArray = new Array(arrayLength); 
+var adTextArray = new Array(arrayLength);
+var counter = 0;
+var befocused = -1;
+var url = "http://www.webdm.cn"; //initial URL
+var interval = 1500;
+
+//add your necessary URL's
+urlArray[0] = "./image/china.jpg";
+urlArray[1] = "./image/australia.gif";
+urlArray[2] = "./image/alipay.jpg";
+
+
+banArray[0] = new Image(468, 60);
+banArray[0].src = "./image/china.jpg";
+banArray[1] = new Image(468, 60);
+banArray[1].src = "./image/australia.gif";
+banArray[2] = new Image(468, 60);
+banArray[2].src = "./image/alipay.jpg";
+banArray[3] = new Image(468, 60);
+banArray[3].src = "./image/penford.jpg";
+banArray[4] = new Image(468, 60);
+banArray[4].src = "./image/rightlogo.gif";
+
+shopArray[0]="mychemist";
+shopArray[1]="coles";
+shopArray[2]="woolworth";
+shopArray[3]="aldi";
+shopArray[4]="liquorland";
+
+adTextArray[0] = "澳洲一家大型连锁药店，拥有全部奶粉";
+adTextArray[1] = "coles是澳洲最大的超市！";
+adTextArray[2] = "Woolworth和Safeway是同一家";
+adTextArray[3] = "ALDI是最便宜的仓储超市";
+adTextArray[4] = "Liquorland是澳洲人常见的买酒的超市";
+
+
+
+function changeBanner(x) 
+{
+  if(x<0){	
+  if(counter > arrayLength-1)
+   counter = 0;
+  }else{
+  counter=x;
+  //alert(x);
+  }
+
+  //document.banner.src = banArray[counter].src; //sets a new banner
+  document.getElementById('adindex').src = banArray[counter].src;	
+  document.getElementById('adtext').innerHTML=adTextArray[counter];
+  url = urlArray[counter];
+  if(befocused>=0) 
+  	focusOff(befocused);
+  focusOn(counter);
+
+  
+  counter++; 
+}
+var timer = window.setInterval("changeBanner(-1)", interval);
+
+function stopchangebanner(){
+//alert("HAHA");
+	window.clearInterval(timer);	
+}
+
+function startchangebanner(){
+	timer = window.setInterval("changeBanner(-1)", interval);
+}
+
+function focusOn(x){
+	//alert(shopArray[x]);
+	if(befocused>=0)
+		focusOff(befocused);
+
+	if(x>=0){
+		document.getElementById(shopArray[x]).style.opacity=0.4;
+		befocused = x;
+	}
+}
+
+function focusOff(x){
+	if(x>=0){
+		document.getElementById(shopArray[x]).style.opacity=1;
+		befocused=-1;
+	}
+}
+
+//-->
+</script>
+
 </HEAD>
 
 

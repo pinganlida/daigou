@@ -6,10 +6,10 @@
 		<table border=1>	
 		
 		<tr>
-				<td>
+				<td >
 				商品名称
 				</td>
-				<td>
+				<td width="500">
 				商品描述
 				</td>			
 				
@@ -21,10 +21,13 @@
 		{section name=outer loop=$productlist}
 			<tr>
 				<td>
-				{$productlist[outer].name}
+				<img width="150" src="./image/productpic/{$productlist[outer].image}">
+				
 				</td>
 				<td>
-				{$productlist[outer].description}
+				{$productlist[outer].name}<br>
+				价格: {$productlist[outer].price} 元<br>
+				描述: {$productlist[outer].description|truncate_cn:"500"}				
 				</td>
 			
 	

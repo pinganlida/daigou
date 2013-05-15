@@ -12,7 +12,7 @@ $numrows = $db->rownumber(product);
 
 
 //设定每一页显示的记录数
-$pagesize = 3;
+$pagesize = 10;
 //计算总页数
 $pages=intval($numrows/$pagesize);
 if($numrows%$pagesize)

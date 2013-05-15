@@ -217,17 +217,27 @@ document.getElementById(elmnt).style.visibility="hidden";
 <table width="1280px"  height="45px" background="./image/navigator2.gif" border="0" >
 	<tr>
 		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/index.php">首页</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/index.php">首页</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/product.php" onmouseover="showmenu('productlist')" onmouseout="hidemenu('productlist')">商品列表</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=milkpowder">澳洲奶粉</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/goodofhelper.php">代购员信息</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=skincare">护肤品</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/faq.php">常见问题</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=health">保健品</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/aboutus.php">关于我们</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=ugg">UGG雪地靴</a></td>
 		<td class="navigator" width="10px">|</td>
-		<td class="navigator" width="100px"><a href="{$domainname}/contactus.php">联系我们</a></td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=wine">澳洲红酒</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="80px"><a href="{$domainname}/product.php?category=essentialoil">澳洲精油</a></td>
+		<td class="navigator" width="10px">|</td>
+		
+
+		<td class="navigator" width="80px"><a href="{$domainname}/faq.php">常见问题</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="80px"><a href="{$domainname}/aboutus.php">关于我们</a></td>
+		<td class="navigator" width="10px">|</td>
+		<td class="navigator" width="80px"><a href="{$domainname}/contactus.php">联系我们</a></td>
 		<td class="navigator" align="right">
          &nbsp;&nbsp;&nbsp;&nbsp;
 		</td>

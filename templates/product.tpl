@@ -50,7 +50,7 @@
 		<input id="selectpage"  name="selectpage" type="text"><br>
 		<input type="submit" name="submit" value="ÌøÒ³   ">
 		</td>
-		<td>
+		<td valign="top">
 		
 		{include file="rightcolumn.tpl" title=foo}
 		</td>

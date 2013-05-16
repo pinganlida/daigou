@@ -6,4 +6,17 @@ $category["ugg"]="Ñ©µØÑ¥";
 $category["wine"]="ºì¾Æ";
 
 
+$milkbranch["karicare"]="Karicare";
+$milkbranch["bellamy"]="Bellamy±´À­Ã×";
+$milkbranch["s26"]="»ÝÊÏS26";
+$milkbranch["ozcare"]="OZcare °ÄÊË¿¨";
+$milkbranch["woolworths"]="Woolworths";
+$milkbranch["nestle"]="Nestle È¸³²";
+$milkbranch["diploma"]="Diploma";
+$milkbranch["ozfarm"]="OZ Farm";
+
+
+
+
+
 ?>

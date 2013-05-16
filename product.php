@@ -7,9 +7,10 @@ $smarty = new Smarty;
 $db = new mysqlconnect();
 require('./include/juglogin.php');
 include_once './include/include.php';
+include_once './include/data.php';
 
 if($_GET["category"]=="milkpowder"){
-	$numrows = $db->rownumber(product);
+	//$numrows = $db->rownumber(product);
 	//设定每一页显示的记录数
 	$pagesize = 10;
 	//计算总页数
@@ -34,8 +35,14 @@ if($_GET["category"]=="milkpowder"){
 	//计算记录偏移量
 	$offset = ($page-1)*$pagesize;
 	
-	$sql = "select * from product limit $offset,$pagesize";
+	$branch = $_GET["branch"];
+	if($_GET["branch"])
+		$sql = "select * from product where category = 'milkpowder' and branch = '$branch' limit $offset,$pagesize";
+	else
+		$sql = "select * from product where category = 'milkpowder' limit $offset,$pagesize";
 	$arr = $db->query_array($sql);
+	
+	$numrows=count($arr);
 	
 	$smarty->assign("productlist", $arr);
 	
@@ -72,6 +79,16 @@ if($_GET["category"]=="milkpowder"){
 	$notcurrentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
 	$smarty->assign("NotCurrentpage",$notcurrentpage);
 	}
+	
+	if(!$_GET["branch"]){
+		$smarty->assign("milkbranch",$milkbranch);
+		$smarty->assign("milkbranchtpl",$smarty->fetch("milkbranch.tpl"));
+	}else{
+		$smarty->assign("branchname",$milkbranch[$_GET["branch"]]);
+		$smarty->assign("milkbranchtpl",$smarty->fetch("milkbranchselected.tpl"));
+	}
+	
+	
 	$smarty->assign("domainname",$domainname);
 	$smarty->display('product_milkpowder.tpl');	
 }else{

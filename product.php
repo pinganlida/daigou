@@ -17,7 +17,19 @@ if($_GET["category"]=="milkpowder"){
 	//$numrows = $db->rownumber(product);
 	//设定每一页显示的记录数
 	$pagesize = 10;
+	$branch = $_GET["branch"];
 	//计算总页数
+	if($_GET["branch"]){		
+		$sqlcount = "select count(*) from product where category = 'milkpowder' and branch = '$branch'";
+	}
+	else{		
+		$sqlcount = "select count(*) from product where category = 'milkpowder'";
+	}
+	$arr2 = $db->query_array($sqlcount);
+	
+	$numrows=$arr2[0][0];
+	
+	
 	$pages=intval($numrows/$pagesize);
 	if($numrows%$pagesize)
 		$pages++;
@@ -39,14 +51,15 @@ if($_GET["category"]=="milkpowder"){
 	//计算记录偏移量
 	$offset = ($page-1)*$pagesize;
 
-	$branch = $_GET["branch"];
-	if($_GET["branch"])
+	
+	if($_GET["branch"]){
 		$sql = "select * from product where category = 'milkpowder' and branch = '$branch' limit $offset,$pagesize";
-	else
+	}
+	else{
 		$sql = "select * from product where category = 'milkpowder' limit $offset,$pagesize";
+	}
 	$arr = $db->query_array($sql);
-
-	$numrows=count($arr);
+	
 
 	$smarty->assign("productlist", $arr);
 
@@ -159,6 +172,7 @@ if($_GET["category"]=="milkpowder"){
 		$notcurrentpage .= "<a href='product.php?".$str."page=".$i."'>[".$i."]</a>";
 		$smarty->assign("NotCurrentpage",$notcurrentpage);
 	}
+	$smarty->assign("jumppageurl", "product.php?$str");
 	$smarty->assign("domainname",$domainname);
 	$smarty->display('product.tpl');	
 }

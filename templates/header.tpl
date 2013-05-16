@@ -144,9 +144,28 @@ border:5px solid #ccc;
 
 td.milkpowderbranch
 {
-font-size: 18px;
+font-size: 12px;
 color:black;
 text-align: center;
+}
+
+table.productshow
+{
+border-width:1px;
+border-style: solid;
+border-color: #E9E9E9;
+margin:0px;
+padding:0px;
+border-collapse:collapse;
+}
+td.productshow
+{
+border-width:1px;
+border-style: solid;
+border-color: #999999;
+margin:0px;
+padding:10px;
+vertical-align: top;
 }
 -->
 </style>
@@ -297,11 +316,11 @@ function focusOff(x){
 </div>
 
 
-<div style="width:1280px; border-width:0px; border-style:solid">
+<div style="width:1024px; border-width:0px; border-style:solid">
 <table width="100%"  height="58px"border="0" >
 	<tr>
 		<td width="250px"><img src="./image/upxlogo2.gif"></td>
-		<td align = "left" valign="bottom" align="left">
+		<td width="250px" align = "left" valign="bottom" align="left">
 		{if $islogin == 1}
 			欢迎你 {$username}  | 
 			<span onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心</span>
@@ -321,10 +340,10 @@ function focusOff(x){
 	</tr>
 </table>
 </div>
-<div style="width:1280px; height: 5px;" ></div>
-<div style="width:1280px; height: 55px; border-width:0px; border-style:solid; text-align: right">
+<div style="width:1024px; height: 5px;" ></div>
+<div style="width:1024px; height: 55px; border-width:0px; border-style:solid; text-align: right">
 
-<table width="1280px"  height="45px" background="./image/navigator2.gif" border="0" >
+<table width="1024px"  height="45px" background="./image/navigator2.gif" border="0" >
 	<tr>
 		<td class="navigator"  width="20px"> &nbsp;&nbsp;</td>
 		<td class="navigator" width="80px"><a href="{$domainname}/index.php">首页</a></td>

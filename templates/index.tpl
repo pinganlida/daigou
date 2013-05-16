@@ -1,5 +1,5 @@
 {include file="header.tpl" title=foo}
-<div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
+<div style="width:1024px; border-width:0px; border-style:solid; text-align: center">
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">
@@ -17,13 +17,13 @@
 				</div>
 				</td>
 				<td valign = "top">
-				<div id="mychemistdiv" class="leftcolumn" style="display:none;">
-				testtesttesttesttesttesttesttesttesttest
+				
+				<img id="adindex" src="./image/mychemist_ad" width=510 height=320 border=0 name="banner" onMouseOver="stopchangebanner();" onMouseOut="startchangebanner();">
+				<br><br>
+				<div id="adtext">				
 				</div>
-				<img id="adindex" src="./image/mychemist_ad" width=517 height=380 border=0 name="banner" onMouseOver="stopchangebanner();" onMouseOut="startchangebanner();">
 				</td>
-				<td id="adtext" width ="160" valign="top">
-				</td>
+			
 			</tr>			
 		</table>
 		

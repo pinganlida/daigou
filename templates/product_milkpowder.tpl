@@ -4,16 +4,20 @@
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">
-		<h2> <img width="15px" src="./image/icon2.gif"> «Î—°‘ÒƒÃ∑€∆∑≈∆ </h2>	
-		<hr>
-		<img width="150" src="./image/productpic/karicaregoldimmu1duan.jpg">
-		<img width="150" src="./image/productpic/bellamy1duan.jpg">
-		<img width="150" src="./image/productpic/huishi1duan.jpg">
-		<img width="150" src="./image/productpic/ozcare1duan.jpg">
-		<img width="150" src="./image/productpic/woolworthskim.jpg">
-		<img width="150" src="./image/productpic/nestle1.jpg">
-		<img width="150" src="./image/productpic/diplomaskim.jpg">
-		<img width="150" src="./image/productpic/ozfarmprobiotic.jpg">
+		
+		{$milkbranchtpl}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 

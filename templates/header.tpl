@@ -141,6 +141,13 @@ img.focus
 padding:3px;
 border:5px solid #ccc;
 }
+
+td.milkpowderbranch
+{
+font-size: 18px;
+color:black;
+text-align: center;
+}
 -->
 </style>
 

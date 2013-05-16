@@ -8,6 +8,11 @@ $db = new mysqlconnect();
 require('./include/juglogin.php');
 include_once './include/include.php';
 include_once './include/data.php';
+foreach ($_GET as $key => $value)
+{
+	if($key != page)
+		$str .= $key."=". $value."&";
+}
 if($_GET["category"]=="milkpowder"){
 	//$numrows = $db->rownumber(product);
 	//设定每一页显示的记录数
@@ -51,16 +56,16 @@ if($_GET["category"]=="milkpowder"){
 	$last=$pages;
 	if($page>1)
 	{
-		$fristpage = "<a href='product.php?page=".$frist."'>首页</a>";
-		$prevpage =  "<a href='product.php?page=".$prev."'>上一页</a>";
+		$fristpage = "<a href='product.php?".$str."page=".$frist."'>首页</a>";
+		$prevpage =  "<a href='product.php?".$str."page=".$prev."'>上一页</a>";
 	
 		$smarty->assign("Frist", $fristpage);
 		$smarty->assign("Prev", $prevpage);
 	}
 	if($page<$pages)
 	{
-		$nextpage =  "<a href='product.php?page=".$next."'>下一页</a>";
-		$lastpage =  "<a href='product.php?page=".$last."'>最后一页</a>";
+		$nextpage =  "<a href='product.php?".$str."page=".$next."'>下一页</a>";
+		$lastpage =  "<a href='product.php?".$str."page=".$last."'>最后一页</a>";
 	
 		$smarty->assign("Next", $nextpage);
 		$smarty->assign("Last", $lastpage);
@@ -69,13 +74,13 @@ if($_GET["category"]=="milkpowder"){
 	$smarty->assign("TotalPage", $totalpage);
 	for($i=1; $i<$page; $i++)
 	{
-	$currentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
+	$currentpage .= "<a href='product.php?".$str."page=".$i."'>[".$i."]</a>";
 	$smarty->assign("Currentpage"," $currentpage ");
 	}
 	$smarty->assign("Displaypage",$page);
 	for($i=$page+1; $i<=$pages;$i++)
 	{
-	$notcurrentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
+	$notcurrentpage .= "<a href='product.php?".$str."page=".$i."'>[".$i."]</a>";
 	$smarty->assign("NotCurrentpage",$notcurrentpage);
 	}
 	
@@ -127,16 +132,16 @@ if($_GET["category"]=="milkpowder"){
 	$last=$pages;
 	if($page>1)
 	{
-		$fristpage = "<a href='product.php?page=".$frist."'>首页</a>";
-		$prevpage =  "<a href='product.php?page=".$prev."'>上一页</a>";
+		$fristpage = "<a href='product.php?".$str."page=".$frist."'>首页</a>";
+		$prevpage =  "<a href='product.php?".$str."page=".$prev."'>上一页</a>";
 	
 		$smarty->assign("Frist", $fristpage);
 		$smarty->assign("Prev", $prevpage);
 	}
 	if($page<$pages)
 	{
-		$nextpage =  "<a href='product.php?page=".$next."'>下一页</a>";
-		$lastpage =  "<a href='product.php?page=".$last."'>最后一页</a>";
+		$nextpage =  "<a href='product.php?".$str."page=".$next."'>下一页</a>";
+		$lastpage =  "<a href='product.php?".$str."page=".$last."'>最后一页</a>";
 	
 		$smarty->assign("Next", $nextpage);
 		$smarty->assign("Last", $lastpage);
@@ -145,13 +150,13 @@ if($_GET["category"]=="milkpowder"){
 	$smarty->assign("TotalPage", $totalpage);
 	for($i=1; $i<$page; $i++)
 	{
-		$currentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
+		$currentpage .= "<a href='product.php?".$str."page=".$i."'>[".$i."]</a>";
 		$smarty->assign("Currentpage"," $currentpage ");
 	}
 	$smarty->assign("Displaypage",$page);
 	for($i=$page+1; $i<=$pages;$i++)
 	{
-		$notcurrentpage .= "<a href='product.php?page=".$i."'>[".$i."]</a>";
+		$notcurrentpage .= "<a href='product.php?".$str."page=".$i."'>[".$i."]</a>";
 		$smarty->assign("NotCurrentpage",$notcurrentpage);
 	}
 	$smarty->assign("domainname",$domainname);

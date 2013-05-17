@@ -37,7 +37,7 @@
 	
 				<td width="100" class="productshow">
 				价格: {$productlist[outer].price} 元<br><br>
-				<a target=_blank href="{$domainname}/addtocart.php?productid={$productlist[outer].id}">放入购物车</a>
+				<a target=_blank href="{$domainname}/addtocart.php?productid={$productlist[outer].id}"><img src="./image/chart.gif"> 放入购物车</a>
 				</td>
 			</tr>
 		{/section}

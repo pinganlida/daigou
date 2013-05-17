@@ -167,6 +167,17 @@ margin:0px;
 padding:10px;
 vertical-align: top;
 }
+
+td.description
+{
+border-width:1px;
+border-style: solid;
+border-color: #999999;
+margin:0px;
+padding:40px;
+vertical-align: top;
+line-height:300%
+}
 -->
 </style>
 
@@ -178,10 +189,10 @@ if(elmnt=="productlist")
 	offset = 174;
 if(elmnt=="register")
 	offset = 350;
-if(document.body.clientWidth<1280)
+if(document.body.clientWidth<1024)
 	document.getElementById(elmnt).style.left =offset;
 else
-	document.getElementById(elmnt).style.left = (document.body.clientWidth-1280)/2+offset-8;
+	document.getElementById(elmnt).style.left = (document.body.clientWidth-1024)/2+offset-8;
 document.getElementById(elmnt).style.visibility="visible";
 }
 function hidemenu(elmnt)

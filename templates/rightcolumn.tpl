@@ -57,8 +57,3 @@
 <br>
 
 
-<div width="100%" class="rightcolumn">
-<img width="15px" src="./image/icon2.gif"> ¹«Ë¾µØÖ·:
-<hr>
-<a href="{$domainname}/contactus.php"><img width="250" src ="./image/address.jpg"></a>
-</div>

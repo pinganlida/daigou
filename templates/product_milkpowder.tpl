@@ -26,8 +26,7 @@
 		{section name=outer loop=$productlist}
 			<tr>
 				<td class="productshow">
-				<img width="150" src="./image/productpic/{$productlist[outer].image}">
-				
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$productlist[outer].id}"><img width="150" src="./image/productpic/{$productlist[outer].image}"> </a>
 				</td>
 				<td class="productshow">
 				<h2>{$productlist[outer].name}</h2><br>

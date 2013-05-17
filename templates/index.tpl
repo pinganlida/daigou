@@ -18,7 +18,7 @@
 				</td>
 				<td valign = "top">
 				
-				<img id="adindex" src="./image/mychemist_ad" width=510 height=320 border=0 name="banner" onMouseOver="stopchangebanner();" onMouseOut="startchangebanner();">
+				<img id="adindex" src="./image/mychemist_ad.jpg" width=510 height=320 border=0 name="banner" onMouseOver="stopchangebanner();" onMouseOut="startchangebanner();">
 				<br><br>
 				<div id="adtext">				
 				</div>
@@ -32,20 +32,110 @@
 		
 		<h2> <img width="15px" src="./image/icon2.gif"> 热门商品 </h2>	
 		<hr>
-		<img width="135" src ="./image/aptamilgold.jpg">	
-		<img width="135" src ="./image/karicare.jpg">	
-		<img width="135" src ="./image/ugg.jpg">
-		<img width="135" src ="./image/jurliquerosehandcream.jpg">
-		<img width="135" src ="./image/penford.jpg">
+		<table>
+			<tr>
+				{section name=outer loop=$populargoods}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$populargoods[outer].image}">
+				{$populargoods[outer].name}<br>
+				价格: {$populargoods[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
 		
-		<h2> <img width="15px" src="./image/icon2.gif"> 澳洲常见超市和商店  </h2>	
+
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> 澳新奶粉  </h2>	
+		<hr>		
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> 护肤品  </h2>	
 		<hr>
-		<img width="150" src ="./image/coles.jpg">	
-		<img width="150" src ="./image/woolworths.jpg">	
-		<img width="150" src ="./image/safeway.jpg">
-		<img width="150" src ="./image/aldi.jpg">
-		<img width="150" src ="./image/mychemist.jpg">
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
 		
+		<h2> <img width="15px" src="./image/icon2.gif"> 保健品  </h2>	
+		<hr>
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> UGG雪地靴  </h2>	
+		<hr>
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> 澳洲红酒  </h2>	
+		<hr>
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
+		
+		<h2> <img width="15px" src="./image/icon2.gif"> 澳洲精油  </h2>	
+		<hr>
+		<table>
+			<tr>
+				{section name=outer loop=$milkpowderlist}
+				<td align="center">	
+				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				{$milkpowderlist[outer].name}<br>
+				价格: {$milkpowderlist[outer].price}
+				</td>
+				{/section}
+				
+			</tr>
+		</table>
 		
 		</td>
 		<td rowspan="3" valign="top">

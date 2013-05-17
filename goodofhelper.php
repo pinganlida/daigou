@@ -1,5 +1,4 @@
 <?php
-?><?php
 require('./libs/Smarty.class.php');
 require('./include/mysql.php');
 

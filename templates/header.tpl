@@ -55,7 +55,7 @@ margin: 0 auto;
 
 div.rightcolumn
 {
-background: #FBFBFB;
+background: #F0F0F0;
 padding: 10px;
 border-style: solid; 
 border-width: 1px;

@@ -5,13 +5,18 @@
 <div width="100%" class="rightcolumn" style="line-height: 200%;">
 <img width="15px" src="./image/icon2.gif"> 常见问题
 <hr>
+
 <li><a href="{$domainname}/faq.php#1">我们的货源可靠吗</a><br>
 <li><a href="{$domainname}/faq.php#2">如果代购员买到假货怎么办?</a><br>
-<li><a href="{$domainname}/faq.php#3">货物如何运输到中国?大概要多久收到?海关会找麻烦吗?</a><br>
-<li><a href="{$domainname}/faq.php#4">如何网上支付</a><br>
 <li><a href="{$domainname}/faq.php#5">澳洲奶粉品牌简要介绍</a><br>
-<li><a href="{$domainname}/faq.php#6">该买什么牌子的奶粉? 能简单介绍一下澳洲的奶粉吗?</a><br>
-<li><a href="{$domainname}/faq.php#7">如果我对货物不满意的话怎么办，能更换或者退款吗？</a><br>
+<li><a href="{$domainname}/faq.php#6">能简单介绍一下澳洲的奶粉吗?</a><br>
+<li><a href="{$domainname}/faq.php#7">配送时间和范围</a><br>
+<li><a href="{$domainname}/faq.php#8">配送费收取标准</a><br>
+<li><a href="{$domainname}/faq.php#9">支付宝支付方式指南</a><br>
+<li><a href="{$domainname}/faq.php#10">退换货原则</a><br>
+<li><a href="{$domainname}/faq.php#11">退换货流程</a><br>
+
+
 </div>
 
 <br>

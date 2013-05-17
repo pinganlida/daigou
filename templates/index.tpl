@@ -36,7 +36,7 @@
 			<tr>
 				{section name=outer loop=$populargoods}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$populargoods[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$populargoods[outer].id}"><img width="150" src="./image/productpic/{$populargoods[outer].image}"> </a>
 				{$populargoods[outer].name}<br>
 				价格: {$populargoods[outer].price}
 				</td>
@@ -53,7 +53,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}"> </a>
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>
@@ -68,7 +68,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>
@@ -83,7 +83,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>
@@ -98,7 +98,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>
@@ -113,7 +113,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>
@@ -128,7 +128,7 @@
 			<tr>
 				{section name=outer loop=$milkpowderlist}
 				<td align="center">	
-				<img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$milkpowderlist[outer].id}"><img width="150" src="./image/productpic/{$milkpowderlist[outer].image}">
 				{$milkpowderlist[outer].name}<br>
 				价格: {$milkpowderlist[outer].price}
 				</td>

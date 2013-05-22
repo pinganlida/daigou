@@ -4,8 +4,8 @@
 	<tr>
 		<td width="70%" valign="top">
 		<form name="LoginForm" method="post" action="login.php">
-		<p>用户名:<input id="username" name="username" type="text"><p/>
-		<p>密 码:<input id="password" name="password" type="password"><p/>
+		<p>用户名:<input id="username" name="username" type="text" maxlength="30"><p/>
+		<p>密 码:<input id="password" name="password" type="password" maxlength="50"><p/>
 		<p><input type="submit" name="submit" value="确 定  "></p>
 		{$message}
 		</form>

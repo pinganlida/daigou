@@ -42,7 +42,7 @@
 		{$NotCurrentpage}
 		
 		<form name="selectpages" action="tradehistory.php" method="post">
-		<input id="selectpage"  name="selectpage" type="text"><br>
+		<input id="selectpage"  name="selectpage" type="text" maxlength="2"><br>
 		<input type="submit" name="submit" value="ÌøÒ³   ">
 		</td>
 		<td>

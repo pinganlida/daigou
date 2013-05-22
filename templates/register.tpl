@@ -21,19 +21,19 @@ function refreshCaptcha()
 		<table border="0">
 			<tr>
 				<td>输入用户名</td>
-				<td> <input id="username"  name="username" type="text" value="{$input.username}"></td>
+				<td> <input id="username"  name="username" type="text" value="{$input.username}" maxlength="30"></td>
 			</tr>
 			<tr>
 				<td>设置密码</td>
-				<td><input  id="password" name="password" type="password"></td>
+				<td><input  id="password" name="password" type="password" maxlength="50"></td>
 			</tr>
 			<tr>
 				<td>重复密码</td>
-				<td><input  id="repass" name="repass" type="password"></td>
+				<td><input  id="repass" name="repass" type="password" maxlength="50"></td>
 			</tr>
 			<tr>
 				<td>电子邮箱</td>
-				<td><input id="email" name="email" type="text" value = "{$input.email}"></td>
+				<td><input id="email" name="email" type="text" value = "{$input.email}" maxlength="50"></td>
 			</tr>	
 			<tr>
 				<td>验证码</td>
@@ -42,7 +42,7 @@ function refreshCaptcha()
 			</tr>
 			<tr>
 				<td><label for='message'>请输入上面的验证码 :</label></td>
-				<td><input id="6_letters_code" name="6_letters_code" type="text"></td>
+				<td><input id="6_letters_code" name="6_letters_code" type="text" maxlength="6"></td>
 			</tr>
 			<tr>
 				<td colspan="2">

@@ -46,12 +46,12 @@ if($_POST['submit'])
 	
 	if(!preg_match('/^[a-z\d_]{5,20}$/i', $username))
 	{
-		$error .= '用户名不匹配<br>';
+		$error .= '用户名只能由字母,数字,下划线组成<br>';
 	}
 	
 	if(filter_var($email,FILTER_VALIDATE_EMAIL) === false)
 	{
-		$error .= '邮箱不匹配<br>';
+		$error .= '请填写正确的邮箱格式<br>';
 	} 
 	// 服务器端验证的代码    
 	if(empty($_SESSION['6_letters_code'] )||strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
@@ -62,7 +62,7 @@ if($_POST['submit'])
 	
 	if(!empty($error))
 	{		
-		$smarty->assign("Error",$error,true);
+		$smarty->assign("error",$error,true);
 		unset($error);
 	}
 	else

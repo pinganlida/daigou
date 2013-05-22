@@ -51,6 +51,13 @@ function refreshCaptcha()
 			</tr>	
 			<tr>
 				<td>&nbsp;</td>
+				<td><font color="red">
+					{$error}
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
 				<td><input type="submit" name="submit" value="  提交注册  "></td>
 			</tr>
 		</table>
@@ -59,7 +66,7 @@ function refreshCaptcha()
 		         
 
 	
-	{$error}
+	
 	{if count($message) gt 0}
 		<a href="{$message}">返回主页</a><br/>
 	{/if}

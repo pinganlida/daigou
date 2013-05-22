@@ -51,6 +51,9 @@ if($ist == true)
 		{
 			$address = addslashes($address);
 			$postcode = addslashes($postcode);
+			$gender = addslashes($gender);
+			$country = addslashes($country);
+			$phone = addslashes($phone);
 			
 			$sql_query = "UPDATE users SET email = '$email',gender = '$gender',
 							address = '$address', postcode = '$postcode',country = '$country',phone = '$phone'

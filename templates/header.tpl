@@ -188,7 +188,7 @@ var offset = 174;
 if(elmnt=="productlist")
 	offset = 174;
 if(elmnt=="register")
-	offset = 350;
+	offset = 900;
 if(document.body.clientWidth<1024)
 	document.getElementById(elmnt).style.left =offset;
 else
@@ -302,11 +302,10 @@ function focusOff(x){
 
 
 <body align = "center">
-<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 80px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
+<div class="menu" id="register" style="position: absolute; float: left; left: 350px; top: 55px; z-index: 1;" onmouseover="showmenu('register')" onmouseout="hidemenu('register')">
 <table width="120">
 	<tr><td class="menu"><a href="{$domainname}/changeinfo.php">修改个人资料</a></td></tr>
-	<tr><td class="menu"><a href="{$domainname}/login.php?action=logout">注销</a></td></tr>
-	<tr><td class="menu"><a href="{$domainname}/upload_file.php">上传图片</a></td></tr>
+	<tr><td class="menu"><a href="{$domainname}/login.php?action=logout">注销</a></td></tr>	
 	<tr><td class="menu"><a href="{$domainname}/tradehistory.php">查询历史交易记录</a></td></tr>
 </table>
 </div>
@@ -330,12 +329,17 @@ function focusOff(x){
 <div style="width:1024px; border-width:0px; border-style:solid">
 <table width="100%"  height="58px"border="0" >
 	<tr>
-		<td width="250px"><img src="./image/upxlogo2.gif"></td>
+		<td width="250px"><img width="268" src="./image/upxlogo.jpg"></td>
 		<td width="250px" align = "left" valign="bottom" align="left">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		</td>
+		<td align="right" valign="bottom">
 		{if $islogin == 1}
-			欢迎你 {$username}  | 
-			<span onmouseover="showmenu('register')" onmouseout="hidemenu('register')">个人中心</span>
-				
+			欢迎你 {$username}  | 			
+			<a href="{$domainname}/changeinfo.php">修改个人资料</a> |	
+  			<a href="{$domainname}/tradehistory.php">查询历史交易记录</a> |
+  			<a href="{$domainname}/login.php?action=logout">注销</a>
+  			
   				  			
 		{else}
 			<a href="{$domainname}/register.php">注册</a>
@@ -343,11 +347,8 @@ function focusOff(x){
 			<a href="{$domainname}/login.php">登陆</a>
 		{/if}
 		| <a href="{$domainname}/cart.php">购物车 </a> <a href="{$domainname}/cart.php"><img src="./image/chart.gif"></a>
+		
 		</td>
-		<td align="right" valign="bottom">
-		
-		
-		<img src="./image/rightlogo2.gif"></td>
 	</tr>
 </table>
 </div>

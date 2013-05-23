@@ -1,17 +1,17 @@
 {include file="header.tpl" title=foo}
 {if count($error) eq 0}
-<h1>历史交易列表</h1>
-<div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
+<div style="width:1024px; border-width:0px; border-style:solid; text-align: center">
 <table width="100%" border="0">
 	<tr>
-		<td width="70%" valign="top">
-		<br>
-		<table border=1>
+		<td width="70%" valign="top">		
+		<h2> <img width="15px" src="./image/icon2.gif"> 历史交易记录 </h2>	
+		<hr>
+		<table border=1 width="100%" class="productshow">
 			<tr>
-				<td>	
+				<td width="400">	
 					产品名称
 				</td>
-				<td>	
+				<td widt="50">	
 					产品价格
 				</td>
 				<td>	
@@ -32,6 +32,7 @@
 			</tr>			
 		{/section}
 		</table>
+		<form name="selectpages" action="tradehistory.php" method="post">
 		{$Frist}
 		{$Prev}
 		{$Next}
@@ -41,9 +42,9 @@
 		{$Displaypage}
 		{$NotCurrentpage}
 		
-		<form name="selectpages" action="tradehistory.php" method="post">
-		<input id="selectpage"  name="selectpage" type="text" maxlength="2"><br>
-		<input type="submit" name="submit" value="跳页   ">
+		
+		跳到第<input id="selectpage"  name="selectpage" type="text" maxlength="2" size="2">页
+		<input type="submit" name="submit" value="Go">
 		</td>
 		<td>
 		

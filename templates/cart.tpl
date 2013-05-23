@@ -1,29 +1,29 @@
 {include file="header.tpl" title=foo}
-<div style="width:1280px; text-align: center" >
+<div style="width:1024px; text-align: center" >
 <table width="100%" border="0">
 	<tr>
-		<td width="70%" valign="top">
+		<td width="70%" valign="top" >
 		
-		<h2> <img width="15px" src="./image/icon2.gif"> 关于我们 </h2>	
+		<h2> <img width="15px" src="./image/icon2.gif"> 购物车 </h2>	
 		<hr>
 		<br>
 		<font color=red>{$error}</font>
-		<table width="100%" border=1>
+		<table width="100%" border=“1” class="productshow">
 			
 		{section name=outer loop=$productlist}
 		<form method="post" action="">
 			<tr>
-				<td>{$productlist[outer].id}</td>
-				<td>{$productlist[outer].name}</td>
-				<td>{$productlist[outer].price}</td>				
-				<td>{$productlist[outer].quantity}</td>				
-				<td>
+				<td class="productshow" width="10">{$productlist[outer].id}</td>
+				<td class="productshow" >{$productlist[outer].name}</td>
+				<td class="productshow" width="35">{$productlist[outer].price}</td>				
+				<td class="productshow" width="10">{$productlist[outer].quantity}</td>				
+				<td class="productshow" width="140">
 				<input name="submit" type="submit" value="修改数量">
-				<input name="quantity" value="{$productlist[outer].quantity}" type="input" size="4">
+				<input name="quantity" value="{$productlist[outer].quantity}" type="input" size="2">
 				<input name="quantityid" value="{$productlist[outer].id}" type="hidden">
 				</td>
 				
-				<td><a href="{$domainname}/cart.php?delete={$productlist[outer].id}">移除商品</a></td>
+				<td class="productshow" width="50"><a href="{$domainname}/cart.php?delete={$productlist[outer].id}">移除商品</a></td>
 			<tr>
 			</form>
 		{/section}

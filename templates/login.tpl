@@ -1,13 +1,27 @@
 {include file="header.tpl" title=foo}
-<div style="width:1280px; border-width:0px; border-style:solid; text-align: center">
+<div style="width:1024px; border-width:0px; border-style:solid; text-align: center">
+
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">
 		<form name="LoginForm" method="post" action="login.php">
-		<p>用户名:<input id="username" name="username" type="text" maxlength="30"><p/>
-		<p>密 码:<input id="password" name="password" type="password" maxlength="50"><p/>
-		<p><input type="submit" name="submit" value="确 定  "></p>
-		{$message}
+		<h2> <img width="15px" src="./image/icon2.gif"> 请您登录</h2>	
+		<hr>
+		<table border="0">
+			<tr>
+				<td>用户名</td>
+				<td><input id="username" name="username" type="text" maxlength="30"></td>
+			</tr>
+			<tr>
+				<td>密 码</td>
+				<td><input id="password" name="password" type="password" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" name="submit" value="登录"></td>
+			</tr>
+		</table>
+		<font color="red">{$message}</font>
 		</form>
 		</td>
 		<td>

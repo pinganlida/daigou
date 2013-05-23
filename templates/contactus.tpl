@@ -1,5 +1,5 @@
 {include file="header.tpl" title=foo}
-<div style="width:1280px; text-align: center" >
+<div style="width:1024px; text-align: center" >
 <table width="100%" border="0">
 	<tr>
 		<td width="70%" valign="top">

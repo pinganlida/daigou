@@ -43,7 +43,7 @@
 		{$NotCurrentpage}
 		
 		
-		跳到第<input id="selectpage"  name="selectpage" type="text" maxlength="2" size="2">页
+		跳到第<input id="selectpage"  name="selectpage" type="text" maxlength="1" size="2">页
 		<input type="submit" name="submit" value="Go">
 		</td>
 		<td>

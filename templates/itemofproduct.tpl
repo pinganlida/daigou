@@ -17,7 +17,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2" class="description">{$item[outer].description}</td>
+				<td colspan="2" class="description">{$item[outer].description}
+				<br>
+				<img width="400" src="./image/productpic/{$item[outer].image}">
+				</td>
 			</tr>
 		{/section}
 		</table>

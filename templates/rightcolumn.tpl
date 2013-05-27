@@ -1,5 +1,5 @@
 <div width="100%" class="rightcolumn">
-<iframe width="100%" height="200px" src="http://www.youtube.com/embed/6joCkcLXg9I?autoplay=0" frameborder="0" allowfullscreen></iframe>
+<embed src="http://player.youku.com/player.php/sid/XMjE2Mzg4ODQ0/v.swf" allowFullScreen="true" quality="high" width="100%" height="200" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </div>
 <br>
 <div width="100%" class="rightcolumn" style="line-height: 200%;">

@@ -29,9 +29,12 @@
 				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$productlist[outer].id}"><img width="150" src="./image/productpic/{$productlist[outer].image}"> </a>
 				</td>
 				<td class="productshow">
-				<h2>{$productlist[outer].name}</h2><br>
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$productlist[outer].id}"><h2>{$productlist[outer].name}</h2></a>
+				<br>
 				
-				描述: {$productlist[outer].description|truncate:"500"}				
+				描述: {$productlist[outer].description|truncate:"400"}	
+				<p style="text-align:right">
+				<a target=_blank href="{$domainname}/itemofproduct.php?itemid={$productlist[outer].id}"><font color="red">更多...</font></a></p>			
 				</td>
 			
 	
@@ -40,8 +43,11 @@
 				<a target=_blank href="{$domainname}/addtocart.php?productid={$productlist[outer].id}"><img src="./image/chart.gif"> 放入购物车</a>
 				</td>
 			</tr>
+
 		{/section}
 		</table>
+		
+		<form name="selectpages" action="{$jumppageurl}" method="post">
 		{$Frist}
 		{$Prev}
 		{$Next}
@@ -50,10 +56,11 @@
 		{$Currentpage}
 		{$Displaypage}
 		{$NotCurrentpage}
-		
-		<form name="selectpages" action="{$jumppageurl}" method="post">
-		<input id="selectpage"  name="selectpage" type="text" maxlength="2"><br>
-		<input type="submit" name="submit" value="跳页   ">
+		&nbsp;&nbsp;
+		跳到第
+		<input id="selectpage"  name="selectpage" type="text" maxlength="2" size="1">
+		页
+		<input type="submit" name="submit" value="Go">
 		</td>
 		<td valign="top">
 		
